@@ -1,0 +1,991 @@
+{
+"Skin": [
+  {
+    "id": "base",
+    "title": "皮肤底色",
+    "body": "BaseColor.RGB 直接进入底层 Base Color。SkinFace 与 SkinBody 分别绑定头部、身体贴图。母图 #0 的 MakeUpLipstick 可在底层和唇妆合成之间选择。",
+    "status": "connected",
+    "parameters": [
+      "BaseColor",
+      "MakeUpLipstick"
+    ],
+    "node": 5,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "高光 · 打包图 R",
+    "body": "LightMap_Spec_Rough_3S.R × SpecularIntensity 进入底层 Specular。唇妆分支启用时会在妆层重新计算高光。",
+    "status": "connected",
+    "parameters": [
+      "LightMap_Spec_Rough_3S",
+      "SpecularIntensity",
+      "MakeUpLipstick",
+      "Lipstick高光"
+    ],
+    "node": 1,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "金属度 · 唇妆支路",
+    "body": "底层未设置 Metallic，沿用默认值。唇妆层把 LipstickMaskRGBA × Lipstick金属度 写入 Metallic，只有 MakeUpLipstick 打开时才进最终材质。目前脸和身体实例均关闭该开关。",
+    "status": "conditional",
+    "parameters": [
+      "MakeUpLipstick",
+      "LipstickMask",
+      "LipstickMaskRGBA",
+      "Lipstick金属度"
+    ],
+    "node": 31,
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "切线空间法线",
+    "body": "Normal.RGB 经 FlattenNormal 输出到 Normal，法线平坦度由 1−NormalIntensity 控制。",
+    "status": "connected",
+    "parameters": [
+      "Normal",
+      "NormalIntensity"
+    ],
+    "node": 3,
+    "mode": "Normal"
+  },
+  {
+    "id": "roughness",
+    "title": "粗糙度 · 打包图 G",
+    "body": "LightMap_Spec_Rough_3S.G × RoughnessIntensity 进入底层 Roughness。开启唇妆时妆层另用 (1−LipstickMaskRGBA) × Lipstick粗糙度。",
+    "status": "connected",
+    "parameters": [
+      "LightMap_Spec_Rough_3S",
+      "RoughnessIntensity",
+      "MakeUpLipstick",
+      "Lipstick粗糙度"
+    ],
+    "node": 2,
+    "mode": "Roughness"
+  },
+  {
+    "id": "sss",
+    "title": "次表面散射权重 · 打包图 B",
+    "body": "LightMap_Spec_Rough_3S.B × 3SIntensity 经 Opacity 供 Opaque 的 Subsurface Profile 路径使用。母图引用 Skin.Skin。独立 SSS 纹理采样 #8 没有接入材质输出。",
+    "status": "connected",
+    "parameters": [
+      "LightMap_Spec_Rough_3S",
+      "3SIntensity"
+    ],
+    "node": 4,
+    "mode": "SubsurfaceColor"
+  },
+  {
+    "id": "lipstick",
+    "title": "唇妆混合",
+    "body": "MakeUpLipstick=True 时，LipstickColor.A 控制妆层混合。LipstickMaskRGBA 中的 B 则进入妆层高光、金属度和粗糙度。当前两个皮肤实例都关闭 MakeUpLipstick。",
+    "status": "conditional",
+    "parameters": [
+      "MakeUpLipstick",
+      "LipstickColor",
+      "LipstickMask",
+      "LipstickMaskRGBA",
+      "LipstickColorUV",
+      "LipstickMaskUV",
+      "LipstickColorCenterUV (SB)",
+      "LipstickMaskCenterUV (SB)"
+    ],
+    "node": 22,
+    "mode": "BaseColor"
+  }
+],
+"Eye": [
+  {
+    "id": "base",
+    "title": "虹膜、瞳孔与三段调色",
+    "body": "虹膜 R 与 0.5 比较，决定虹膜色与白色的过渡，结果乘上瞳孔色。EyeMask 的 R/G/B 依次混入三个区域色，EyeLight A/B 再叠加到最终 Base Color。",
+    "status": "connected",
+    "parameters": [
+      "EyeIris",
+      "EyePupil",
+      "EyeUV",
+      "EyeCenterUV (SB)",
+      "EyeMask",
+      "EyeMaskRColor",
+      "EyeMaskGColor",
+      "EyeMaskBColor",
+      "AllIntensity"
+    ],
+    "node": 78,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "来自场景照明的高光",
+    "body": "EyeSpecularIntensity 直接进入 Specular。亮斑纹理另经颜色链进入 Base Color，接线可在「眼内亮斑」中查看。",
+    "status": "connected",
+    "parameters": [
+      "EyeSpecularIntensity"
+    ],
+    "node": 5,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Matcap 内部 Fresnel",
+    "body": "MF_Matcap 内部 Fresnel 只参与计算采样 UV 缩放，公式为 ScaleUV + (2×Fresnel−1)×边缘强度。当前边缘强度和 MatcapIntensity 均为 0。WorldPosition? 决定 UV 方向的输入来源，和 Fresnel 的贡献量分属不同控制。",
+    "status": "inactive",
+    "parameters": [
+      "Matcap边缘 (S)",
+      "Matcap边缘强度 (S)",
+      "MatcapIntensity",
+      "WorldPosition? (SB)"
+    ],
+    "node": 66,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 接到基础色",
+    "body": "MF_Matcap 输出经 #69、#74 把查表结果加进眼球色，再由虹膜阈值控制混合。当前 MI_Nikki_Eye 有 Matcap 纹理引用，但 MatcapIntensity=0。",
+    "status": "inactive",
+    "parameters": [
+      "Matcap (T2d)",
+      "MatcapIntensity",
+      "MatcapScaleUV (S)",
+      "WorldPosition? (SB)",
+      "Normal? (SB)"
+    ],
+    "node": 66,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "metallic",
+    "title": "眼球金属度",
+    "body": "EyeMetallicityIntensity 直接连到 Metallic。虹膜和瞳孔的颜色纹理均走 Base Color。",
+    "status": "connected",
+    "parameters": [
+      "EyeMetallicityIntensity"
+    ],
+    "node": 7,
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "瞳孔与虹膜法线合并",
+    "body": "EyePupilNormal 和 EyeIrisNormal 分别 FlattenNormal，再经 #32 BlendAngleCorrectedNormals 合并，瞳孔为 BaseNormal，虹膜为 AdditionalNormal。",
+    "status": "connected",
+    "parameters": [
+      "EyePupilNormal",
+      "EyePupilNormalIntensity",
+      "EyeIrisNormal",
+      "EyeIrisNormalIntensity",
+      "EyeUV"
+    ],
+    "node": 32,
+    "mode": "Normal"
+  },
+  {
+    "id": "roughness",
+    "title": "眼球粗糙度标量",
+    "body": "EyeRoughnessIntensity 独立直连 Roughness。",
+    "status": "connected",
+    "parameters": [
+      "EyeRoughnessIntensity"
+    ],
+    "node": 6,
+    "mode": "Roughness"
+  },
+  {
+    "id": "eye-light",
+    "title": "眼内亮斑 · Base Color",
+    "body": "EyeLightA 用自己的 R 混入 RGB×EyeLightAColor。EyeLightB 先对 RGB+A 去饱和，再用得到的灰度加权叠入 EyeLightBColor。两道亮斑都进入 Base Color，母图没有 Emissive 接线。",
+    "status": "connected",
+    "parameters": [
+      "EyeLightA",
+      "EyeLightAColor",
+      "EyeLightB",
+      "EyeLightBColor",
+      "EyeUV"
+    ],
+    "node": 58,
+    "mode": "BaseColor"
+  }
+],
+"CorneaBlur": [
+  {
+    "id": "base",
+    "title": "角膜层颜色",
+    "body": "TearsColor.RGB 直接接 Base Color，当前实例为黑色。最终影响取决于半透明覆盖量。",
+    "status": "connected",
+    "parameters": [
+      "TearsColor"
+    ],
+    "node": 10,
+    "mode": "Lit"
+  },
+  {
+    "id": "specular",
+    "title": "角膜高光标量",
+    "body": "SpecularIntensity 在图上直连 Specular。当前实例覆盖为 0，透明层结果应结合 Lighting Mode 阅读。",
+    "status": "connected",
+    "parameters": [
+      "SpecularIntensity"
+    ],
+    "node": 0,
+    "mode": "Lit"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "角膜金属度标量",
+    "body": "MetallicityIntensity 在图上直连 Metallic。角膜为 After DOF 半透明，标准不透明 Metallic 缓冲不覆盖此层。",
+    "status": "connected",
+    "parameters": [
+      "MetallicityIntensity"
+    ],
+    "node": 2,
+    "mode": "Lit"
+  },
+  {
+    "id": "normal",
+    "title": "法线",
+    "body": "材质图没有 Normal 输出接线。有光照时仍能看到网格表面方向。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "roughness",
+    "title": "角膜粗糙度标量",
+    "body": "RoughnessIntensity 在图上直连 Roughness。当前半透明层用 Volumetric NonDirectional 灯光路径。",
+    "status": "connected",
+    "parameters": [
+      "RoughnessIntensity"
+    ],
+    "node": 1,
+    "mode": "Lit"
+  },
+  {
+    "id": "alpha",
+    "title": "透明覆盖 · TearsMask.G",
+    "body": "TearsMask 读取经 MF_UV 变换的 UV1，实际静态分量选择 G，直接接 Opacity。TearsMaskCenterUV 仅选择 UV 变换支路。",
+    "status": "connected",
+    "parameters": [
+      "TearsMask",
+      "TearsMaskRGBA",
+      "TearsMaskUV",
+      "TearsMaskCenterUV (SB)"
+    ],
+    "node": 9,
+    "mode": "SeparateTranslucencyRGB"
+  }
+],
+"Hair": [
+  {
+    "id": "base",
+    "title": "头发染色",
+    "body": "Hair.RGB 经 MF_Color 进行饱和度、对比度处理，再乘 HairColor，输出毛束底色。",
+    "status": "connected",
+    "parameters": [
+      "Hair",
+      "HairColor",
+      "饱和度",
+      "对比度"
+    ],
+    "node": 2,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "发丝高光 · UV1 遮罩",
+    "body": "HairColorMask.RGB 由 UV1 采样后乘高光度，写入 Specular。实际纹理为 T_S0142_SM。",
+    "status": "connected",
+    "parameters": [
+      "HairColorMask",
+      "高光度"
+    ],
+    "node": 21,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "Hair 模型 · 散射度接 Metallic 插针",
+    "body": "名为“散射度”的标量连到 Material Attributes 的 Metallic 插针。此处使用 Hair 着色模型，报告保留实际插针信息，避免直接套用 Default Lit 的金属材质含义。",
+    "status": "connected",
+    "parameters": [
+      "散射度"
+    ],
+    "node": 19,
+    "mode": "ShadingModel"
+  },
+  {
+    "id": "normal",
+    "title": "毛束法线",
+    "body": "HairNormal.RGB 通过 FlattenNormal，平坦度为 1−法线强度。",
+    "status": "connected",
+    "parameters": [
+      "HairNormal",
+      "法线强度"
+    ],
+    "node": 6,
+    "mode": "Normal"
+  },
+  {
+    "id": "roughness",
+    "title": "发丝粗糙度 · ROA.R",
+    "body": "HairROA.R × 粗糙度进入 Roughness。",
+    "status": "connected",
+    "parameters": [
+      "HairROA",
+      "粗糙度"
+    ],
+    "node": 20,
+    "mode": "Roughness"
+  },
+  {
+    "id": "alpha",
+    "title": "毛束剪裁 · ROA.B",
+    "body": "HairROA.B × 透明度写入 Opacity 与 Opacity Mask。当前为双面 Masked，剪裁阈值约 0.3333。",
+    "status": "connected",
+    "parameters": [
+      "HairROA",
+      "透明度"
+    ],
+    "node": 14,
+    "mode": "Lit"
+  },
+  {
+    "id": "ao",
+    "title": "毛束遮蔽 · ROA.G",
+    "body": "HairROA.G × AO度进入 Ambient Occlusion。",
+    "status": "connected",
+    "parameters": [
+      "HairROA",
+      "AO度"
+    ],
+    "node": 16,
+    "mode": "AmbientOcclusion"
+  }
+],
+"Clothes": [
+  {
+    "id": "base",
+    "title": "主层颜色与第二层",
+    "body": "主层将 Clothes.RGB × ClothesAddColor.RGB 送入 MF_Color，再乘 AllClothesIntensity。第二层使用独立颜色图与染色。DealAlpha? 打开时由 ClothesDeal.A 混合两整套 Material Attributes。",
+    "status": "connected",
+    "parameters": [
+      "Clothes",
+      "ClothesAddColor",
+      "ClothesColor",
+      "饱和度",
+      "对比度",
+      "AllClothesIntensity",
+      "ClothesDeal",
+      "ClothesDealColor",
+      "AllClothesDealIntensity",
+      "DealAlpha?"
+    ],
+    "node": 91,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "高光 · 双层独立标量",
+    "body": "主层 Specular 使用高光度，第二层使用 ClothesDeal高光度。DealAlpha? 打开时两值按第二层 Alpha 混合。",
+    "status": "connected",
+    "parameters": [
+      "高光度",
+      "ClothesDeal高光度",
+      "DealAlpha?"
+    ],
+    "node": 12,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Matcap 内部 Fresnel · 上游断开",
+    "body": "母图的 #86 调用 MF_Matcap，函数内部 Fresnel 会修正采样 UV，且取决于边缘强度。函数结果只写入 #88 具名声明，在该材质里没有 Usage 通到输出。切换 WorldPosition?、Normal? 或材质层开关不改变这条断线。",
+    "status": "inactive",
+    "parameters": [
+      "Matcap边缘 (S)",
+      "Matcap边缘强度 (S)",
+      "WorldPosition? (SB)",
+      "Normal? (SB)"
+    ],
+    "node": 86
+  },
+  {
+    "id": "matcap",
+    "title": "保留的 Matcap 资产引用",
+    "body": "母图保留纹理对象与 MF_Matcap 调用，结果停在未被使用的 Matcap 声明。实例可以依旧列出其纹理与参数。",
+    "status": "inactive",
+    "parameters": [
+      "Matcap (T2d)",
+      "MatcapIntensity",
+      "MatcapScaleUV (S)",
+      "WorldPosition? (SB)",
+      "Normal? (SB)"
+    ],
+    "node": 86
+  },
+  {
+    "id": "metallic",
+    "title": "金属度 · M 图 R 或标量",
+    "body": "主层 ClothesMTex_? 开时将 ClothesM.R × 金属度写入 Metallic，关时直接用金属度。第二层用同样结构和自己的参数。",
+    "status": "conditional",
+    "parameters": [
+      "ClothesM",
+      "金属度",
+      "ClothesMTex_?",
+      "ClothesDealM",
+      "ClothesDeal金属度",
+      "ClothesDealMTex_?",
+      "DealAlpha?"
+    ],
+    "node": 54,
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "主法线、平铺法线和第二层法线",
+    "body": "主法线经 FlattenNormal。TileNormal? 开启时，另一路按 ClothesTileNormalUV 采样，经 FlattenNormal 后以角度修正混合。第二层有自己的 ClothesDealNormal，并随 DealAlpha? 混入。",
+    "status": "conditional",
+    "parameters": [
+      "ClothesNormal",
+      "法线强度",
+      "TileNormal?",
+      "ClothesTileNormalUV",
+      "ClothesTileNormal",
+      "Tile法线强度",
+      "ClothesDealNormal",
+      "ClothesDeal法线强度",
+      "DealAlpha?"
+    ],
+    "node": 29,
+    "mode": "Normal"
+  },
+  {
+    "id": "roughness",
+    "title": "粗糙度 · M 图 G 及反向",
+    "body": "ClothesMTex_? 开启时使用 G×粗糙度或 (1−G)×粗糙度，由 G粗糙度反向? 选择。禁用贴图时直接用粗糙度标量。第二层有自己的一组 M 图控制。",
+    "status": "conditional",
+    "parameters": [
+      "ClothesM",
+      "粗糙度",
+      "G粗糙度反向?",
+      "ClothesMTex_?",
+      "ClothesDealM",
+      "ClothesDeal粗糙度",
+      "ClothesDealG粗糙度反向？",
+      "ClothesDealMTex_?",
+      "DealAlpha?"
+    ],
+    "node": 55,
+    "mode": "Roughness"
+  },
+  {
+    "id": "alpha",
+    "title": "裁剪与整层混合",
+    "body": "Clothes.A 经 ClothesAlpha 给主层 Opacity 与 Opacity Mask。ClothesDeal.A 既给第二层两个透明引脚，也驱动两层混合。实例实际 Blend Mode 决定输出是否产生剪裁。",
+    "status": "conditional",
+    "parameters": [
+      "Clothes",
+      "ClothesDeal",
+      "DealAlpha?"
+    ],
+    "node": 48,
+    "mode": "Lit"
+  },
+  {
+    "id": "uv",
+    "title": "主层、叠层与平铺 UV",
+    "body": "主层和第二层各有 UV0–3 静态选择。ClothesAddColor 固定用 UV1，平铺法线走 UV0 再变换。打开 DealAlpha? 后使用第二层自己的 MF_UV 参数。",
+    "status": "conditional",
+    "parameters": [
+      "ClothesUV1?",
+      "ClothesUV2?",
+      "ClothesUV3?",
+      "ClothesDealUV1?",
+      "ClothesDealUV2?",
+      "ClothesDealUV3?",
+      "ClothesDealUV",
+      "ClothesTileNormalUV"
+    ],
+    "node": 75,
+    "mode": "BaseColor"
+  }
+],
+"Feather": [
+  {
+    "id": "base",
+    "title": "羽毛着色 · 打包图 R",
+    "body": "Feather.R × FeatherAddColor.RGB 后经 MF_Color 接 Base Color。FeatherAddColor 从 UV1 采样，Feather 主图按线性 Masks 导入。",
+    "status": "connected",
+    "parameters": [
+      "Feather",
+      "FeatherAddColor",
+      "ClothesColor",
+      "饱和度",
+      "对比度"
+    ],
+    "node": 1,
+    "mode": "Lit"
+  },
+  {
+    "id": "specular",
+    "title": "羽毛高光 · 打包图 B",
+    "body": "Feather.B × 高光度写入 Specular。同一 B 通道另乘粗糙度来驱动 Roughness。",
+    "status": "connected",
+    "parameters": [
+      "Feather",
+      "高光度"
+    ],
+    "node": 15,
+    "mode": "Lit"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "金属度",
+    "body": "母材质没有 Metallic 接线或对应实例参数。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "normal",
+    "title": "羽毛法线",
+    "body": "FeatherNormal.RGB 经 FlattenNormal 写入 Normal，平坦度为 1−法线强度。",
+    "status": "connected",
+    "parameters": [
+      "FeatherNormal",
+      "法线强度"
+    ],
+    "node": 5,
+    "mode": "Lit"
+  },
+  {
+    "id": "roughness",
+    "title": "羽毛粗糙度 · 打包图 B",
+    "body": "Feather.B × 粗糙度写入 Roughness。与 Specular 共用 B，变量倍率独立。",
+    "status": "connected",
+    "parameters": [
+      "Feather",
+      "粗糙度"
+    ],
+    "node": 16,
+    "mode": "Lit"
+  },
+  {
+    "id": "alpha",
+    "title": "羽缘透明 · 打包图 A",
+    "body": "Feather.A 经具名转接 FeatherAlpha 进入 Opacity 与 Opacity Mask。当前为 After DOF 的 Translucent，重点观察 Opacity 的连续变化。",
+    "status": "connected",
+    "parameters": [
+      "Feather"
+    ],
+    "node": 18,
+    "mode": "SeparateTranslucencyRGB"
+  },
+  {
+    "id": "ao",
+    "title": "羽毛遮蔽 · 打包图 G",
+    "body": "Feather.G × AO度直接接 Ambient Occlusion。可在纹理 G 通道中查看输入分布。",
+    "status": "connected",
+    "parameters": [
+      "Feather",
+      "AO度"
+    ],
+    "node": 17,
+    "mode": "Lit"
+  },
+  {
+    "id": "sss",
+    "title": "Subsurface Color 接线",
+    "body": "FeatherAddColor.RGB 在参与底色之外还接 Subsurface Color。当前材质是 Default Lit 透明变体，接线可查，是否对该透明路径产生屏幕贡献需结合实际着色。",
+    "status": "connected",
+    "parameters": [
+      "FeatherAddColor"
+    ],
+    "node": 13,
+    "mode": "Lit"
+  }
+],
+"Color": [
+  {
+    "id": "base",
+    "title": "基色 · 紫色 + Matcap",
+    "body": "Color.RGB 与 MF_Matcap 查表结果相加，写入 Base Color。",
+    "status": "connected",
+    "parameters": [
+      "Color",
+      "Matcap (T2d)",
+      "MatcapIntensity"
+    ],
+    "node": 15,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "高光标量",
+    "body": "SpecularIntensity 直接连到 Specular。Matcap 的颜色仍由 Base Color 输入。",
+    "status": "connected",
+    "parameters": [
+      "SpecularIntensity"
+    ],
+    "node": 1,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Matcap 内部 Fresnel · 零强度",
+    "body": "MF_Matcap 内部用 (2×Fresnel−1)×边缘强度修正采样 UV 缩放。当前边缘强度为 0，Matcap 仍可通过正常 UV 查表；WorldPosition? 开关控制 UV 来源。",
+    "status": "inactive",
+    "parameters": [
+      "Matcap边缘 (S)",
+      "Matcap边缘强度 (S)"
+    ],
+    "node": 10,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表进入 Base Color",
+    "body": "实例以 T_Matcap_Array_01_20 查表，MatcapIntensity=1。当前 WorldPosition? 关闭，Normal? 使用函数默认的顶点法线路径。",
+    "status": "connected",
+    "parameters": [
+      "Matcap (T2d)",
+      "MatcapIntensity",
+      "MatcapScaleUV (S)",
+      "WorldPosition? (SB)"
+    ],
+    "node": 10,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "metallic",
+    "title": "金属度标量",
+    "body": "MetallicityIntensity 独立进入 Metallic，当前记录为 1。",
+    "status": "connected",
+    "parameters": [
+      "MetallicityIntensity"
+    ],
+    "node": 3,
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "法线",
+    "body": "材质图没有 Normal 输出接线。有光照时仍能看到网格表面方向。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "roughness",
+    "title": "粗糙度标量",
+    "body": "RoughnessIntensity 直接接 Roughness，当前实例为 0.2。",
+    "status": "connected",
+    "parameters": [
+      "RoughnessIntensity"
+    ],
+    "node": 2,
+    "mode": "Roughness"
+  },
+  {
+    "id": "alpha",
+    "title": "透明引脚 · Opaque 下无剪裁",
+    "body": "AlphaIntensity 同时写到 Opacity 与 Opacity Mask，实例实际为 Opaque。保留的透明引脚不参与常规不透明表面的 Alpha 剪裁。",
+    "status": "inactive",
+    "parameters": [
+      "AlphaIntensity"
+    ],
+    "node": 5,
+    "mode": "Lit"
+  }
+],
+"Brow": [
+  {
+    "id": "base",
+    "title": "眉贴 RGB 调色",
+    "body": "Brow.RGB 经 MF_Color 接 Base Color。BrowUV 用 R/G 表示缩放、B/A 表示偏移，送 MF_UV。",
+    "status": "connected",
+    "parameters": [
+      "Brow",
+      "BrowColor",
+      "BrowUV",
+      "Brow饱和度",
+      "Brow对比度"
+    ],
+    "node": 5,
+    "mode": "Lit"
+  },
+  {
+    "id": "specular",
+    "title": "眉贴高光标量",
+    "body": "SpecularIntensity 直接连 Specular。当前眉贴为 Surface 透明光照，标准不透明 Specular 缓冲无法单独呈现它。",
+    "status": "connected",
+    "parameters": [
+      "SpecularIntensity"
+    ],
+    "node": 1,
+    "mode": "Lit"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "眉贴金属度标量",
+    "body": "MetallicityIntensity 直接接 Metallic，实例值为 0。",
+    "status": "connected",
+    "parameters": [
+      "MetallicityIntensity"
+    ],
+    "node": 3,
+    "mode": "Lit"
+  },
+  {
+    "id": "normal",
+    "title": "法线",
+    "body": "材质图没有 Normal 输出接线。有光照时仍能看到网格表面方向。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "roughness",
+    "title": "眉贴粗糙度标量",
+    "body": "RoughnessIntensity 直接接 Roughness，实例值为 1。",
+    "status": "connected",
+    "parameters": [
+      "RoughnessIntensity"
+    ],
+    "node": 2,
+    "mode": "Lit"
+  },
+  {
+    "id": "alpha",
+    "title": "眉贴柔边 · A 通道",
+    "body": "Brow.A × AlphaIntensity 同时接 Opacity 与 Opacity Mask。当前显式启用 Translucent，柔边由连续 Opacity 合成。",
+    "status": "connected",
+    "parameters": [
+      "Brow",
+      "AlphaIntensity",
+      "BrowUV"
+    ],
+    "node": 12,
+    "mode": "SeparateTranslucencyRGB"
+  }
+],
+"Eyelash": [
+  {
+    "id": "base",
+    "title": "睫毛图案 RGB",
+    "body": "Eyelash.RGB 经 MF_Color 处理，乘 EyelashColor 后接 Base Color。",
+    "status": "connected",
+    "parameters": [
+      "Eyelash",
+      "EyelashColor",
+      "饱和度 (S)",
+      "对比度 (S)"
+    ],
+    "node": 5,
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "睫毛高光标量",
+    "body": "SpecularIntensity 直接进入 Specular。",
+    "status": "connected",
+    "parameters": [
+      "SpecularIntensity"
+    ],
+    "node": 1,
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "固定零金属度",
+    "body": "常量 0 接 Metallic，无金属度材质参数。",
+    "status": "connected",
+    "parameters": [],
+    "node": 8,
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "法线",
+    "body": "材质图没有 Normal 输出接线。有光照时仍能看到网格表面方向。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "roughness",
+    "title": "睫毛粗糙度标量",
+    "body": "RoughnessIntensity 直接接 Roughness，当前实例约为 0.8。",
+    "status": "connected",
+    "parameters": [
+      "RoughnessIntensity"
+    ],
+    "node": 2,
+    "mode": "Roughness"
+  },
+  {
+    "id": "alpha",
+    "title": "睫毛剪裁 · A 通道",
+    "body": "Eyelash.A 经两次转接进入 Opacity Mask，母图阈值约 0.3333。实例继承 Masked 并覆盖为双面。",
+    "status": "connected",
+    "parameters": [
+      "Eyelash"
+    ],
+    "node": 10,
+    "mode": "Lit"
+  }
+],
+"Other": [
+  {
+    "id": "base",
+    "title": "基础色 · 引擎网格 / 地面",
+    "body": "WorldGridMaterial 的格纹由引擎掩码与距离混合驱动。M_Ground 用 Color.RGB 直连 Base Color。",
+    "status": "connected",
+    "parameters": [
+      "Color"
+    ],
+    "mode": "BaseColor"
+  },
+  {
+    "id": "specular",
+    "title": "高光 · 地面参数",
+    "body": "M_Ground 使用“参数”的 Specular 分量。WorldGridMaterial 没有显式 Specular 接线。",
+    "status": "conditional",
+    "parameters": [
+      "参数"
+    ],
+    "mode": "Specular"
+  },
+  {
+    "id": "fresnel",
+    "title": "Fresnel 边缘",
+    "body": "材质图没有独立 Fresnel 节点或边缘颜色分支。掠射角高光还会受到 UE 着色模型和灯光影响。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "matcap",
+    "title": "Matcap 查表",
+    "body": "这个母材质没有 MF_Matcap 查表分支。",
+    "status": "absent",
+    "parameters": []
+  },
+  {
+    "id": "metallic",
+    "title": "金属度 · 地面参数",
+    "body": "M_Ground 使用“参数”的 Metallicity 分量，WorldGridMaterial 没有显式 Metallic 接线。",
+    "status": "conditional",
+    "parameters": [
+      "参数"
+    ],
+    "mode": "Metallic"
+  },
+  {
+    "id": "normal",
+    "title": "法线 · 引擎网格贴图",
+    "body": "WorldGridMaterial 从 T_Default_Material_Grid_N 采样并写入 Normal。M_Ground 未显式连接 Normal。",
+    "status": "conditional",
+    "parameters": [],
+    "mode": "Normal"
+  },
+  {
+    "id": "roughness",
+    "title": "粗糙度 · 引擎网格 / 地面",
+    "body": "WorldGridMaterial 把格纹掩码和距离权重合成并 Clamp 到 Roughness。M_Ground 使用“参数”的 Roughness 分量。",
+    "status": "connected",
+    "parameters": [
+      "参数"
+    ],
+    "mode": "Roughness"
+  },
+  {
+    "id": "alpha",
+    "title": "透明覆盖",
+    "body": "引擎网格和地面都是 Opaque，材质输出没有 Opacity 或 Opacity Mask 接线。",
+    "status": "absent",
+    "parameters": []
+  }
+]
+}

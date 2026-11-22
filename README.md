@@ -27,3 +27,11 @@ inventory.json、audit.json、named-reroutes.json、lessons.json、instance-rend
 - 中间图用原材质实例派生的动态材质实例，临时调整列表中的参数。机位与灯光在同组阶段保持一致。最终图使用原实例，衣料第二层与眼部亮点的关断实验使用透明黑临时纹理。角膜阶段额外保留眼球与皮肤，以观察合成。
 - 隔离图与完整角色的背后遮挡、投影和反射会有差异。所有分层图为 UE Lit 离屏输出，保留 1440×1440 PNG；部分图片采用同机位合成，方法标注在页面。效果小的材质可按 1:1 看或滑动对照。
 - 临时几何和材质不保存为 UE 资产。采集结束核对 Actor 列表和关卡脏标记。证据清单在 layer-evidence.json，LOD0 数据在 slot-geometry.json。采集命令为 python render_layers.py 与 python render_layers.py --angles，结束后运行 python build.py。
+
+## 材质效果
+
+在「材质图解」中选择实例，再切换「实际材质效果」。条目包含各效果的接线状态、有效参数、贴图与节点入口。「材质与节点」也可查看母材质和未绑定资产的效果说明。
+
+图注区分 UE Lit、缓冲视图和临时参数实验。Fresnel 与 Matcap 近景采用同一饰件槽、相机和 Base Color 缓冲。原实例的 Fresnel UV 修正强度为零，强度为 1 的图是实验对照。使用透明着色路径的材质以原 Lit 或参数对照为主。
+
+效果说明来自 effect-definitions.json，截图清单来自 effect-captures.json。用 python render_effects.py 重采集隔离缓冲，python render_matcap_closeup.py 重采集饰件近景，再运行 python build.py。

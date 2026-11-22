@@ -196,6 +196,7 @@
       choice('材质实例', row.key, rows.map(item => [item.key, rowLabel(item)]), 'data-nl-material') + '</header>' +
       '<div class="nl-instance"><code title="' + escape(row.key) + '">' + escape(row.key) + '</code>' +
       '<button type="button" data-tab="materials" data-key="' + escape(row.key) + '">查实例参数</button></div>' + renderSurface(row) +
+      window.NikkiEffects.render(row.key) +
       '<div class="nl-layout">' + isolate(row) + stageViewer(row, view) + '</div>' +
       (row.notes ? '<p class="nl-notes">' + escape(row.notes) + '</p>' : '');
   }

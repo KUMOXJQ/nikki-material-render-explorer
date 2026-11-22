@@ -65,11 +65,11 @@ def configure(slots,step,context=()):
     return run('import builtins\nimport json\nslots,plan,ctx=json.loads('+repr(args)+')\n'+
                'builtins._nikki_stage.configure(slots,plan,ctx)\nTrue')
 
-def grab(tag,cam,count=1):
+def grab(tag,cam,count=1,*,mode='Lit',folder='layer-renders'):
     image=None
     total=np.zeros((H,W,3),dtype=np.float32) if count>1 else None
     for i in range(count):
-        result=call('Lit',cam,W,H)
+        result=call(mode,cam,W,H)
         data=next((e['data'] for e in result.get('content',[]) if e['type']=='image'),None)
         if not data:
             raise RuntimeError(str(result)[:1000])
@@ -83,13 +83,13 @@ def grab(tag,cam,count=1):
         total/=count
         rgb=np.where(total<=.0031308,total*12.92,1.055*np.power(total,1/2.4)-.055)
         image=Image.fromarray(np.rint(rgb*255).clip(0,255).astype(np.uint8))
-    file='layer-renders/'+tag+'.png'
-    preview='layer-renders/'+tag+'.webp'
+    file=f'{folder}/{tag}.png'
+    preview=f'{folder}/{tag}.webp'
     image.save(ROOT/file)
     image.thumbnail((900,900),Image.Resampling.LANCZOS)
     image.save(ROOT/preview,'WEBP',quality=94,method=4)
     return {'file':file,'preview':preview,'width':W,'height':H,'camera':cam,
-            'frameCount':count,'method':'UE 官方 MCP · Lit 离屏'+(f' · 同机位 {count} 帧合成' if count>1 else ' · 单帧')}
+            'frameCount':count,'mode':mode,'method':f'UE 官方 MCP · {mode} 离屏'+(f' · 同机位 {count} 帧合成' if count>1 else ' · 单帧')}
 
 def save(report):
     tmp=MANIFEST.with_suffix('.tmp')

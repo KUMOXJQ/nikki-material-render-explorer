@@ -62,7 +62,7 @@ function materialCard(k){
       box('有效参数值 · 纹理 / 静态开关 / 标量 / 向量',parameterGroups.join(''),!!m.parent)+
       box('实例存储的覆盖记录',pre(m.overrides))+
       (m.usedTextures.length?box('母材质 GetUsedTextures 结果',m.usedTextures.map(t=>action(name(t),'textures',t)).join(' ')):''):'')+
-    (g?.available?window.NikkiGraph.render(g,k,{open:!!state.key}):'')+box('资产注册表包依赖',linkedDeps(k)),!!state.key);
+    (m?box('实际材质效果',window.NikkiEffects.render(k),!!state.key):'')+(g?.available?window.NikkiGraph.render(g,k,{open:!!state.key}):'')+box('资产注册表包依赖',linkedDeps(k)),!!state.key);
 }
 function materials(){
   const keys=[...new Set([...Object.keys(D.materials),...Object.keys(D.graphs)])];

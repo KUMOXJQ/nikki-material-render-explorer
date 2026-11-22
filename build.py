@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+from effect_report import assemble
+
 root=Path(__file__).resolve().parent
 def read(name):
     path=root/name
@@ -31,6 +33,9 @@ for row in data['layerEvidence'].get('materials',[]):
         overrides=step.get('overrides',{})
         step['values']=[{'name':n, 'current':overrides.get(n,original[n]),'authored':original[n],
                          'modified':n in overrides} for n in names]
+
+definitions=read('effect-definitions.json')
+data['effects']=assemble(data,definitions,read('effect-captures.json')) if definitions else {}
 
 (root/'data.js').write_text('window.NIKKI = '+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 

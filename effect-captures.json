@@ -1,0 +1,2646 @@
+{
+  "materials": {
+    "/Game/Character/Nikki/Materials/MI_Nikki_SkinFace.MI_Nikki_SkinFace": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_SkinFace-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_SkinFace-Specular.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_SkinFace-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_SkinFace-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_SkinFace-Normal.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      },
+      "sss-off": {
+        "file": "effect-renders/MI_Nikki_SkinFace-sss-off.png",
+        "preview": "effect-renders/MI_Nikki_SkinFace-sss-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 144.25080067889246,
+            "z": 152.58155238186504
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.152437171608804,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "3SIntensity": 0
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_Eye.MI_Nikki_Eye": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_Eye-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_Eye-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_Eye-Specular.png",
+        "preview": "effect-renders/MI_Nikki_Eye-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_Eye-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_Eye-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_Eye-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_Eye-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_Eye-Normal.png",
+        "preview": "effect-renders/MI_Nikki_Eye-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      },
+      "specular-off": {
+        "file": "effect-renders/MI_Nikki_Eye-specular-off.png",
+        "preview": "effect-renders/MI_Nikki_Eye-specular-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259668524502,
+            "y": 123.79239703042676,
+            "z": 151.53096186672832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.5636182816004887,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "EyeSpecularIntensity": 0
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_Hair.MI_Nikki_Hair": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_Hair-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_Hair-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_Hair-Specular.png",
+        "preview": "effect-renders/MI_Nikki_Hair-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_Hair-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_Hair-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_Hair-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_Hair-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_Hair-Normal.png",
+        "preview": "effect-renders/MI_Nikki_Hair-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      },
+      "MaterialAO": {
+        "file": "effect-renders/MI_Nikki_Hair-MaterialAO.png",
+        "preview": "effect-renders/MI_Nikki_Hair-MaterialAO.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "MaterialAO",
+        "method": "UE 官方 MCP · MaterialAO 离屏 · 单帧"
+      },
+      "scatter-off": {
+        "file": "effect-renders/MI_Nikki_Hair-scatter-off.png",
+        "preview": "effect-renders/MI_Nikki_Hair-scatter-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.3331148321865,
+            "y": 172.7627074104905,
+            "z": 147.27560984646465
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "散射度": 0
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesA.MI_Nikki_ClothesA": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesA-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1425.3793384726284,
+            "y": 349.27800028227523,
+            "z": 67.96855726396228
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesA-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1425.3793384726284,
+            "y": 349.27800028227523,
+            "z": 67.96855726396228
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesA-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1425.3793384726284,
+            "y": 349.27800028227523,
+            "z": 67.96855726396228
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesA-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1425.3793384726284,
+            "y": 349.27800028227523,
+            "z": 67.96855726396228
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesA-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1425.3793384726284,
+            "y": 349.27800028227523,
+            "z": 67.96855726396228
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_CorneaBlur.MI_Nikki_CorneaBlur": {},
+    "/Game/Character/Nikki/Materials/MI_Nikki_FeatherA.MI_Nikki_FeatherA": {
+      "specular-off": {
+        "file": "effect-renders/MI_Nikki_FeatherA-specular-off.png",
+        "preview": "effect-renders/MI_Nikki_FeatherA-specular-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 421.0086296160786,
+            "z": 86.58929860150005
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "高光度": 0
+        }
+      },
+      "roughness-low": {
+        "file": "effect-renders/MI_Nikki_FeatherA-roughness-low.png",
+        "preview": "effect-renders/MI_Nikki_FeatherA-roughness-low.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 421.0086296160786,
+            "z": 86.58929860150005
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "粗糙度": 0.25
+        }
+      },
+      "normal-off": {
+        "file": "effect-renders/MI_Nikki_FeatherA-normal-off.png",
+        "preview": "effect-renders/MI_Nikki_FeatherA-normal-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 421.0086296160786,
+            "z": 86.58929860150005
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "法线强度": 0
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_Brow.MI_Nikki_Brow": {
+      "specular-off": {
+        "file": "effect-renders/MI_Nikki_Brow-specular-off.png",
+        "preview": "effect-renders/MI_Nikki_Brow-specular-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 126.0056142908106,
+            "z": 153.69014155422832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.664921573114337,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "SpecularIntensity": 0
+        }
+      },
+      "roughness-low": {
+        "file": "effect-renders/MI_Nikki_Brow-roughness-low.png",
+        "preview": "effect-renders/MI_Nikki_Brow-roughness-low.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 126.0056142908106,
+            "z": 153.69014155422832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.664921573114337,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "RoughnessIntensity": 0.25
+        }
+      },
+      "alpha-low": {
+        "file": "effect-renders/MI_Nikki_Brow-alpha-low.png",
+        "preview": "effect-renders/MI_Nikki_Brow-alpha-low.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 126.0056142908106,
+            "z": 153.69014155422832
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.664921573114337,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "AlphaIntensity": 0.25
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_Eyelash.MI_Nikki_Eyelash": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_Eyelash-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_Eyelash-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 128.26292180419756,
+            "z": 151.54081141506816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.8914919631630545,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_Eyelash-Specular.png",
+        "preview": "effect-renders/MI_Nikki_Eyelash-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 128.26292180419756,
+            "z": 151.54081141506816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.8914919631630545,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_Eyelash-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_Eyelash-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 128.26292180419756,
+            "z": 151.54081141506816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.8914919631630545,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_Eyelash-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_Eyelash-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 128.26292180419756,
+            "z": 151.54081141506816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.8914919631630545,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_Eyelash-Normal.png",
+        "preview": "effect-renders/MI_Nikki_Eyelash-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 128.26292180419756,
+            "z": 151.54081141506816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 2.8914919631630545,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_Color.MI_Nikki_Color": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_Color-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_Color-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_Color-Specular.png",
+        "preview": "effect-renders/MI_Nikki_Color-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_Color-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_Color-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_Color-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_Color-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_Color-Normal.png",
+        "preview": "effect-renders/MI_Nikki_Color-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      },
+      "matcap-off": {
+        "file": "effect-renders/MI_Nikki_Color-matcap-off.png",
+        "preview": "effect-renders/MI_Nikki_Color-matcap-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "MatcapIntensity": 0
+        }
+      },
+      "fresnel-on": {
+        "file": "effect-renders/MI_Nikki_Color-fresnel-on.png",
+        "preview": "effect-renders/MI_Nikki_Color-fresnel-on.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1421.7652918989895,
+            "y": 392.7627122604205,
+            "z": 81.41461479221965
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "Matcap边缘强度 (S)": 1
+        }
+      },
+      "matcap-close-original": {
+        "file": "effect-renders/MI_Nikki_Color-matcap-close-original.png",
+        "preview": "effect-renders/MI_Nikki_Color-matcap-close-original.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.157698124194,
+            "y": 123.89736478353261,
+            "z": 144.66794001614238
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.092898131528461,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧",
+        "overrides": {},
+        "slots": [
+          "MI_S0142AEA_02"
+        ]
+      },
+      "matcap-close-off": {
+        "file": "effect-renders/MI_Nikki_Color-matcap-close-off.png",
+        "preview": "effect-renders/MI_Nikki_Color-matcap-close-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.157698124194,
+            "y": 123.89736478353261,
+            "z": 144.66794001614238
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.092898131528461,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧",
+        "overrides": {
+          "MatcapIntensity": 0
+        },
+        "slots": [
+          "MI_S0142AEA_02"
+        ]
+      },
+      "fresnel-close-on": {
+        "file": "effect-renders/MI_Nikki_Color-fresnel-close-on.png",
+        "preview": "effect-renders/MI_Nikki_Color-fresnel-close-on.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.157698124194,
+            "y": 123.89736478353261,
+            "z": 144.66794001614238
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.092898131528461,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧",
+        "overrides": {
+          "Matcap边缘强度 (S)": 1
+        },
+        "slots": [
+          "MI_S0142AEA_02"
+        ]
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_SkinBody.MI_Nikki_SkinBody": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_SkinBody-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_SkinBody-Specular.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_SkinBody-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_SkinBody-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_SkinBody-Normal.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      },
+      "sss-off": {
+        "file": "effect-renders/MI_Nikki_SkinBody-sss-off.png",
+        "preview": "effect-renders/MI_Nikki_SkinBody-sss-off.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 373.2767948215524,
+            "z": 71.95046793972637
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 3,
+        "mode": "Lit",
+        "method": "UE 官方 MCP · Lit 离屏 · 同机位 3 帧合成",
+        "overrides": {
+          "3SIntensity": 0
+        }
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesA1.MI_Nikki_ClothesA1": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesA1-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA1-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1419.873887747073,
+            "y": 144.70132187619487,
+            "z": 120.60931956326152
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 4.908333593516471,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesA1-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA1-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1419.873887747073,
+            "y": 144.70132187619487,
+            "z": 120.60931956326152
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 4.908333593516471,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesA1-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA1-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1419.873887747073,
+            "y": 144.70132187619487,
+            "z": 120.60931956326152
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 4.908333593516471,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesA1-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA1-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1419.873887747073,
+            "y": 144.70132187619487,
+            "z": 120.60931956326152
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 4.908333593516471,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesA1-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesA1-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1419.873887747073,
+            "y": 144.70132187619487,
+            "z": 120.60931956326152
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 4.908333593516471,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesB.MI_Nikki_ClothesB": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesB-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesB-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5224830801724,
+            "y": 348.6235201004088,
+            "z": 71.98309051548625
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesB-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesB-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5224830801724,
+            "y": 348.6235201004088,
+            "z": 71.98309051548625
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesB-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesB-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5224830801724,
+            "y": 348.6235201004088,
+            "z": 71.98309051548625
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesB-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesB-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5224830801724,
+            "y": 348.6235201004088,
+            "z": 71.98309051548625
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesB-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesB-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5224830801724,
+            "y": 348.6235201004088,
+            "z": 71.98309051548625
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesC.MI_Nikki_ClothesC": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesC-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesC-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 305.2452193171299,
+            "z": 94.19510829006816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesC-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesC-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 305.2452193171299,
+            "z": 94.19510829006816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesC-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesC-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 305.2452193171299,
+            "z": 94.19510829006816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesC-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesC-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 305.2452193171299,
+            "z": 94.19510829006816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesC-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesC-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 305.2452193171299,
+            "z": 94.19510829006816
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesD.MI_Nikki_ClothesD": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesD-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesD-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1413.112841337466,
+            "y": 128.23561596463344,
+            "z": 154.24175440823223
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.639539511883722,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesD-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesD-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1413.112841337466,
+            "y": 128.23561596463344,
+            "z": 154.24175440823223
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.639539511883722,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesD-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesD-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1413.112841337466,
+            "y": 128.23561596463344,
+            "z": 154.24175440823223
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.639539511883722,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesD-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesD-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1413.112841337466,
+            "y": 128.23561596463344,
+            "z": 154.24175440823223
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.639539511883722,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesD-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesD-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1413.112841337466,
+            "y": 128.23561596463344,
+            "z": 154.24175440823223
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.639539511883722,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesE.MI_Nikki_ClothesE": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesE-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesE-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1416.907364218974,
+            "y": 97.30051265698312,
+            "z": 155.3300036147752
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 1.4203648694712738,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesE-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesE-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1416.907364218974,
+            "y": 97.30051265698312,
+            "z": 155.3300036147752
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 1.4203648694712738,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesE-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesE-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1416.907364218974,
+            "y": 97.30051265698312,
+            "z": 155.3300036147752
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 1.4203648694712738,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesE-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesE-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1416.907364218974,
+            "y": 97.30051265698312,
+            "z": 155.3300036147752
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 1.4203648694712738,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesE-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesE-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1416.907364218974,
+            "y": 97.30051265698312,
+            "z": 155.3300036147752
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 1.4203648694712738,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesF.MI_Nikki_ClothesF": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesF-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesF-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.165289133334,
+            "y": 125.345149682819,
+            "z": 146.09488856350566
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.2401703287805463,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesF-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesF-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.165289133334,
+            "y": 125.345149682819,
+            "z": 146.09488856350566
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.2401703287805463,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesF-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesF-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.165289133334,
+            "y": 125.345149682819,
+            "z": 146.09488856350566
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.2401703287805463,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesF-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesF-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.165289133334,
+            "y": 125.345149682819,
+            "z": 146.09488856350566
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.2401703287805463,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesF-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesF-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.165289133334,
+            "y": 125.345149682819,
+            "z": 146.09488856350566
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.2401703287805463,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesG.MI_Nikki_ClothesG": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesG-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesG-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 125.00149668165378,
+            "z": 137.73118769680644
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.389774456821458,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesG-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesG-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 125.00149668165378,
+            "z": 137.73118769680644
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.389774456821458,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesG-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesG-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 125.00149668165378,
+            "z": 137.73118769680644
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.389774456821458,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesG-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesG-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 125.00149668165378,
+            "z": 137.73118769680644
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.389774456821458,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesG-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesG-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 125.00149668165378,
+            "z": 137.73118769680644
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.389774456821458,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesH.MI_Nikki_ClothesH": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesH-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesH-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.086916476035,
+            "y": 102.99691409915093,
+            "z": 137.10560023342754
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 0.8230868789987245,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesH-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesH-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.086916476035,
+            "y": 102.99691409915093,
+            "z": 137.10560023342754
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 0.8230868789987245,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesH-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesH-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.086916476035,
+            "y": 102.99691409915093,
+            "z": 137.10560023342754
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 0.8230868789987245,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesH-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesH-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.086916476035,
+            "y": 102.99691409915093,
+            "z": 137.10560023342754
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 0.8230868789987245,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesH-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesH-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.086916476035,
+            "y": 102.99691409915093,
+            "z": 137.10560023342754
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 0.8230868789987245,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesI.MI_Nikki_ClothesI": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesI-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesI-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 135.62139059468268,
+            "z": 4.690031553856381
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.6322488582714443,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesI-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesI-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 135.62139059468268,
+            "z": 4.690031553856381
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.6322488582714443,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesI-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesI-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 135.62139059468268,
+            "z": 4.690031553856381
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.6322488582714443,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesI-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesI-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 135.62139059468268,
+            "z": 4.690031553856381
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.6322488582714443,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesI-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesI-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 135.62139059468268,
+            "z": 4.690031553856381
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 3.6322488582714443,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesJ.MI_Nikki_ClothesJ": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesJ-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesJ-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 146.2356760277208,
+            "z": 6.2501131251969415
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.221870207819154,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesJ-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesJ-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 146.2356760277208,
+            "z": 6.2501131251969415
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.221870207819154,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesJ-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesJ-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 146.2356760277208,
+            "z": 6.2501131251969415
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.221870207819154,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesJ-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesJ-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 146.2356760277208,
+            "z": 6.2501131251969415
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.221870207819154,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesJ-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesJ-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1423.0259792502163,
+            "y": 146.2356760277208,
+            "z": 6.2501131251969415
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 5.221870207819154,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    },
+    "/Game/Character/Nikki/Materials/MI_Nikki_ClothesK.MI_Nikki_ClothesK": {
+      "BaseColor": {
+        "file": "effect-renders/MI_Nikki_ClothesK-BaseColor.png",
+        "preview": "effect-renders/MI_Nikki_ClothesK-BaseColor.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5461990530728,
+            "y": 335.14356447583026,
+            "z": 66.57258784329082
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "BaseColor",
+        "method": "UE 官方 MCP · BaseColor 离屏 · 单帧"
+      },
+      "Specular": {
+        "file": "effect-renders/MI_Nikki_ClothesK-Specular.png",
+        "preview": "effect-renders/MI_Nikki_ClothesK-Specular.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5461990530728,
+            "y": 335.14356447583026,
+            "z": 66.57258784329082
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Specular",
+        "method": "UE 官方 MCP · Specular 离屏 · 单帧"
+      },
+      "Metallic": {
+        "file": "effect-renders/MI_Nikki_ClothesK-Metallic.png",
+        "preview": "effect-renders/MI_Nikki_ClothesK-Metallic.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5461990530728,
+            "y": 335.14356447583026,
+            "z": 66.57258784329082
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Metallic",
+        "method": "UE 官方 MCP · Metallic 离屏 · 单帧"
+      },
+      "Roughness": {
+        "file": "effect-renders/MI_Nikki_ClothesK-Roughness.png",
+        "preview": "effect-renders/MI_Nikki_ClothesK-Roughness.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5461990530728,
+            "y": 335.14356447583026,
+            "z": 66.57258784329082
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Roughness",
+        "method": "UE 官方 MCP · Roughness 离屏 · 单帧"
+      },
+      "Normal": {
+        "file": "effect-renders/MI_Nikki_ClothesK-Normal.png",
+        "preview": "effect-renders/MI_Nikki_ClothesK-Normal.webp",
+        "width": 1440,
+        "height": 1440,
+        "camera": {
+          "location": {
+            "x": 1426.5461990530728,
+            "y": 335.14356447583026,
+            "z": 66.57258784329082
+          },
+          "rotation": {
+            "pitch": 0,
+            "yaw": -90,
+            "roll": 0
+          },
+          "fOV": 38,
+          "perspectiveNearClipPlane": 8,
+          "projectionMode": "Perspective"
+        },
+        "frameCount": 1,
+        "mode": "Normal",
+        "method": "UE 官方 MCP · Normal 离屏 · 单帧"
+      }
+    }
+  },
+  "cleanup": {
+    "actorListRestored": true,
+    "dirtyMapsBefore": [],
+    "dirtyMapsAfter": []
+  }
+}
