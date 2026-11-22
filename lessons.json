@@ -1,0 +1,193 @@
+{
+  "Skin": {
+    "title": "皮肤与唇妆 · 同一材质分出脸和身体",
+    "summary": "S0142D 槽 5 与槽 12 分别绑定 SkinBody、SkinFace，两者继承同一套 Opaque / Subsurface Profile 母材质，使用独立底色、打包参数图与法线。皮肤的柔和受光来自材质属性与 Skin 次表面配置共同作用。",
+    "steps": [
+      {
+        "title": "先对比两组实际纹理",
+        "body": "身体实际采样 T_Body_D_3S、T_BodySpec_Rough_3S、T_Body_N。脸部替换为 T_Head_D_3S_02、T_Spec_Rough_3S、T_Head_N_withCornea。三组均为 1024×1024。底色按 sRGB 导入，参数图按线性 Masks 导入，法线按 Normal Map 导入。在 Base Color 与 Normal 对照中可以分别观察脸与身体的纹理和法线变化。"
+      },
+      {
+        "title": "把一张参数图拆成三条线",
+        "body": "LightMap_Spec_Rough_3S 的 R × SpecularIntensity 接 Specular，G × RoughnessIntensity 接 Roughness，B × 3SIntensity 接 Opacity 输入，三个倍率在脸和身体实例中都为 1。母材质为 Opaque，Opacity 在这里由 Subsurface Profile 用作次表面效果的权重输入。独立名为 SSS 的 #8 采样节点没有接到输出链，两个实例的 SSS 值都是 T_White_Linear。"
+      },
+      {
+        "title": "确认法线与次表面配置的位置",
+        "body": "Normal.RGB 沿 #7 → #3 FlattenNormal 进入 Normal。它的 Flatness 输入为 1−NormalIntensity，两个实例的 NormalIntensity=1。母材质实际引用 /Game/Character/Nikki/Materials/Skin.Skin，基础色走 #5 RGB。面部的同机位 Lit、Base Color、Normal 对照可以帮助区分贴图与受光产生的变化。"
+      },
+      {
+        "title": "判断唇妆分支现在是否生效",
+        "body": "SkinFace 保留 T_PFC0006_D 和 T_NY0076_Skin_Mask，两个独立 MF_UV 都读取 UV0 并启用 CenterUV，对应向量约为 (0.25, 0.13, 0, −0.666532) 与 (0.118947, 0.10, 0, −0.842106)。母材质 #41 LipstickMaskRGBA 选择 B，两个实例都未覆盖。B 与 1−B 分别参与妆层金属度/高光和粗糙度。脸与身体的 MakeUpLipstick 实际都为 False，所以当前走 #0 的底层 #18；唇妆纹理出现在资源表里仍不代表单独妆层已经混入当前输出。"
+      }
+    ],
+    "caveat": "脸部底色本身可以带嘴唇色。材质图中还保留直接 Material Property 接线，本报告追踪启用的 Use Material Attributes 路径。"
+  },
+  "Eye": {
+    "title": "眼球 · 虹膜、瞳孔、三段染色与两种眼内高光",
+    "summary": "S0142D 槽 11 的 MI_Nikki_Eye 是单面的 Opaque / Default Lit 眼球材质。虹膜、瞳孔、亮斑纹理和两张法线经过不同的组合，最后分别进入 Base Color 与 Normal。",
+    "steps": [
+      {
+        "title": "把虹膜与瞳孔对到同一套 UV",
+        "body": "EyeIris=T_EyeIris_D，EyePupil=T_EyePupil_D，两张颜色图均为 512×512。主 UV 输入为 UV0，经 MF_UV 读取 EyeUV=(0.4, 0.4, 0, 0)，EyeCenterUV=True。#30 把虹膜 R 与阈值 0.5 比较，经 Saturate 驱动 #29 从白色到虹膜调色结果的 Lerp，再和瞳孔调色结果相乘。"
+      },
+      {
+        "title": "逐通道查看区域染色",
+        "body": "线性 Masks 纹理 T_X6Eye_Mask 的 R、G、B 分别作为 #36、#38、#42 三个 Lerp 的 Alpha。每级都在当前结果与乘上对应 EyeMask 颜色之后的结果之间混合。实例中 R tint≈(1, 0.784, 0.953)，G=(2, 2, 2)，B=(1, 1, 1)，所以 G 分支具有放大亮度的作用，B 分支在这组参数下保持颜色。"
+      },
+      {
+        "title": "读出高光图真正接到哪里",
+        "body": "EyeLightA=T_Eye_SD_D，#51 用其 R 作为混合权重，用其 RGB×EyeLightAColor 作为 B；EyeLightB=T_EyeSparkle_M，#55 对 RGB+A 去饱和，#58 使用该灰度混入乘 EyeLightBColor 的结果。两组 EyeLightColor 均约为 (12, 6.477, 5.830)。这组图案进入 Base Color，母材质未接 Emissive；实例还保留正常光照所用的 Specular=1、Roughness=0.2、Metallic=0.1。"
+      },
+      {
+        "title": "区分法线与当前静音的 Matcap",
+        "body": "T_EyeIris_N 与 T_EyePupil_N 各自过 FlattenNormal，#32 以瞳孔为 BaseNormal、虹膜为 AdditionalNormal，结果接 Normal。实例虽然把 Matcap 参数绑定到 matcap__122_，MatcapIntensity 实际为 0，因此 MF_Matcap 的纹理颜色贡献为零。可把面部 Lit、Base Color、Normal 并排查看，再到角膜槽分析其上方的独立透明层。"
+      }
+    ],
+    "caveat": "EyeLight 图案在基础色里构成眼内高光样式，Lit 还叠加实际光照与角膜覆盖。眼部小像素的缓冲边缘应结合面部特写判断。"
+  },
+  "CorneaBlur": {
+    "title": "角膜 · UV1 遮罩驱动的独立透明层",
+    "summary": "S0142D 槽 13 绑定 MI_Nikki_CorneaBlur。材质为单面的 Translucent / Default Lit，Translucency Pass 为 After DOF，Lighting Mode 为 Volumetric NonDirectional。",
+    "steps": [
+      {
+        "title": "找到当前实际使用的遮罩",
+        "body": "TearsMask 在实例中替换为 T_CorneaBlurMask_A，128×128、线性、Masks 压缩。#6 的 TextureCoordinate 明确选择 UV1，给 MF_UV；TearsMaskUV=(1, 1, 0, 0)，TearsMaskCenterUV=True，因此选中函数的中心缩放路径。"
+      },
+      {
+        "title": "查看真正接入透明度的通道",
+        "body": "#4 TearsMask 的 RGBA 先进入 #9 静态分量选择 TearsMaskRGBA，结果接 Opacity。UE 读取的母材质掩码默认 G=True，其余为 False。MI_Nikki_CorneaBlur 未覆盖该静态分量参数，所以有效输入为 G；可切到纹理 G 通道查看形状。"
+      },
+      {
+        "title": "区分颜色、参数与透明层表现",
+        "body": "Base Color 接 TearsColor.RGB，实例值 (0, 0, 0)；Roughness=0，Metallic=1，Specular 从母材质 0.5 覆盖为 0。图上没有 Normal 或 Refraction 输出。它属于覆盖在眼球上的透明几何层，可结合单独半透明结果与面部 Lit 观察。"
+      }
+    ],
+    "caveat": "标准不透明 GBuffer 未完整记录此透明层，且项目当前使用栅格透明。单张 Opacity 或 Metallic 诊断图不适合单独判断角膜外观。"
+  },
+  "Hair": {
+    "title": "头发 · Hair 着色与毛束覆盖率",
+    "summary": "S0142H 槽 0 的 MI_Nikki_Hair 使用双面 Masked 材质，UE Hair 着色模型在实例中也被显式选中，母材质的 Opacity Mask Clip Value 约为 0.3333。",
+    "steps": [
+      {
+        "title": "从染色开始看毛束的底色",
+        "body": "T_HAIR_20_D.RGB → MF_Color → BaseColor，HairColor 实例约为 (1, 0.203, 0.494)。MF_Color 先做 Desaturation，Fraction=1−饱和度，再以对比度作为指数做 Power，最后乘 HairColor。当前饱和度与对比度都是 1。"
+      },
+      {
+        "title": "逐通道读线性 ROA 图",
+        "body": "HairROA=T_Fiber_IOAD，1024×1024、线性 Masks。R×粗糙度 → Roughness，G×AO度 → Ambient Occlusion，B×透明度 → Opacity 与 OpacityMask；三项倍率均为 1。浏览纹理时重点打开 B 看毛束边界，再看 R 对应的粗糙度分布。"
+      },
+      {
+        "title": "把高光遮罩和法线分开",
+        "body": "T_S0142_SM 走显式 UV1，采样 RGB×高光度接 Specular；高光度=1。T_HAIR_02_N.RGB 经 FlattenNormal 后接 Normal，法线强度=1。名为“散射度”的 0.6 标量接到 Material Attributes 的 Metallic 槽，网页标注实际引脚以便按 Hair 着色模型阅读。"
+      },
+      {
+        "title": "在画面里查看边缘和亮带",
+        "body": "先放大面部 Lit 查毛发边缘和发梢，再切 Normal 与 Roughness 看亮带受到的表面方向与粗糙度变化。Shading Model 可查看头发与 Default Lit、皮肤的区域区分。"
+      }
+    ],
+    "caveat": "各纹理通道说明基于母材质的真实接线。毛束最终亮度还受视角、光照、Hair 着色及剪裁影响。"
+  },
+  "Clothes": {
+    "title": "礼服与配件 · 12 个实例复用的分层母材质",
+    "summary": "M_Nikki_Clothes 用 95 个节点把主层颜色、R/G 打包参数、普通和细节法线、第二套属性叠加在一起。母材质为双面 Opaque / Default Lit，12 个实例各自控制分支和材质混合覆盖。",
+    "steps": [
+      {
+        "title": "沿主层拆出底色、金属度和粗糙度",
+        "body": "Clothes.RGB × ClothesAddColor.RGB → MF_Color → × AllClothesIntensity → Base Color。ClothesAddColor 固定用 UV1，Clothes、ClothesM、ClothesNormal 共用 ClothesUV 命名转接。ClothesMTex_? 开时 R×金属度进入 Metallic，G 或 1−G 由 G粗糙度反向? 选择后再×粗糙度；关时直接用常量金属度和粗糙度。Specular 单独走高光度。"
+      },
+      {
+        "title": "放大法线看纤维和平铺频率",
+        "body": "ClothesNormal.RGB 经 FlattenNormal，平坦度为 1−法线强度。TileNormal? 开时，以 MF_UV 变换 UV0 采样 ClothesTileNormal，将第二路 FlattenNormal 和主法线通过 BlendAngleCorrectedNormals 合成。A/A1/B 使用 T_Tile_0007_90_512_N，缩放 64×64；C 用 T_Tile_0041_512_N，缩放 12×12；其他实例关闭 TileNormal?。"
+      },
+      {
+        "title": "查看第二套属性在哪些槽生效",
+        "body": "DealAlpha? 在 #0 选择主层 #16 或 #48 BlendMaterialAttributes。第二层 #43 读取 ClothesDeal 的 RGB、ClothesDealNormal 和 ClothesDealM，M 图 R 控金属度、G/1−G 控粗糙度。ClothesDeal.A → ClothesDealAlpha（#49）→ #50 → #48.Alpha，同时给第二层 Opacity 和 Opacity Mask；主层则使用 Clothes.A，经 ClothesAlpha（#58 → #59）送入自己的两个透明度引脚。A/A1/B/E/G/J 打开 DealAlpha?；A 的叠层选择 UV3，A1 与 B 为 UV0，E/G/J 为 UV2；B 另将叠层 UV 缩放为 12×12。"
+      },
+      {
+        "title": "按实例区分 Masked 与 Opaque",
+        "body": "UE 实例 Base Property Overrides 确认 A/D/F/G/H/K 覆盖为 Masked，A1/B/C/E 继承 Opaque，I/J 显式覆盖为 Opaque。A 和 A1 共享同一套采样纹理，却同时差在叠层 UV 与 Blend Mode。B 的槽名含 _Trans，实际继承 Opaque；K 把主层 UV 切到 UV2、用白色作为 ClothesAddColor，并保持 DealAlpha? 关闭。"
+      },
+      {
+        "title": "判断哪些引用只属于保留分支",
+        "body": "C 关闭 ClothesMTex_? 和 DealAlpha?，主层用 Roughness=0.6、Metallic=0，仍记录着 ClothesM 与第二层纹理。D/F/H/I 关闭第二层和 TileNormal?。#86 MF_Matcap 接到 #88 Matcap 声明，在采集的母图里未发现 Matcap 使用节点进入输出；贴图浏览器里的 Matcap 绑定不能据此解释料面高光。"
+      }
+    ],
+    "caveat": "展开 Opaque/Masked 和开关可辨别当前实例走哪条分支。输入图通道值还受实例参数和可见网格区域影响，Alpha 接到 OpacityMask 与实际剪裁行为应结合实例 Blend Mode 解读。"
+  },
+  "Feather": {
+    "title": "羽毛 · 一张打包图控制边缘和表面参数",
+    "summary": "MI_Nikki_FeatherA 在 AHC、AHE、BB、D 五个羽毛槽复用。母材质双面、Default Lit、Translucent，Surface 透明光照，After DOF；实例显式维持 Translucent。该图直接接材质属性输出。",
+    "steps": [
+      {
+        "title": "先看用来着色的 R 和独立颜色图",
+        "body": "Feather=T_S0142AHC_04_01_01_D，虽以 _D 结尾，却按 1024×1024 线性 Masks 导入。它的 R 乘采自 UV1 的 FeatherAddColor.RGB（T_S0142AHC_04_03_01_D），然后经 MF_Color 接 Base Color。ClothesColor 为白，饱和度和对比度都为 1。"
+      },
+      {
+        "title": "将 G、B、A 分别对到输出",
+        "body": "G×AO度 → Ambient Occlusion。B 同时 ×粗糙度 → Roughness、×高光度 → Specular，这三个倍率都为 1。A 输入 #18 FeatherAlpha 声明，#19 用于 Opacity 与 Opacity Mask 输出。Translucent 状态下以 Opacity 和单独半透明缓冲检查羽缘层次。"
+      },
+      {
+        "title": "区别法线、颜色补充与最终透明渲染",
+        "body": "T_S0142AHC_04_01_01_N 经 FlattenNormal 接 Normal，强度为 1。FeatherAddColor.RGB 还直接接 Subsurface Color，可从接线确定它的目标属性，但当前 Default Lit 透明变体中该连接是否产生屏幕贡献需要看对应材质渲染路径。"
+      }
+    ],
+    "caveat": "皮肤使用的 Subsurface Profile 与羽毛的 Subsurface Color 接线是不同层级的证据。羽毛 Alpha 看片时应以 Lit 与透明缓冲结合为准。"
+  },
+  "Color": {
+    "title": "调色件 · 紫色基色叠加 Matcap",
+    "summary": "MI_Nikki_Color 复用于 AEA、AHC、ANE、BB 的四个槽，双面 Opaque / Default Lit。母材质的 Base Color 由颜色参数和 MF_Matcap 输出相加。",
+    "steps": [
+      {
+        "title": "找到与普通礼服底色的区别",
+        "body": "#15 Add 的材质颜色输入来自 Color.RGB，实例将其设为约 (0.790, 0.289, 1.0)。另一条 Matcap 命名转接来自 #10 MF_Matcap 结果。实例将纹理从母材质的 T_GlassMatCap_02 换为 T_Matcap_Array_01_20，MatcapIntensity=1、ScaleUV=1。"
+      },
+      {
+        "title": "展开 Matcap 的采样过程",
+        "body": "MF_Matcap 把法线或位置的变换结果取 XY，乘缩放并映射到 0.5 周围，翻转 V 后查表。WorldPosition?=False，Color 没有接 Normal? 或自定义 Normal，走函数默认的顶点法线分支；边缘强度为 0，Fresnel 调整对缩放的附加量为 0。"
+      },
+      {
+        "title": "把预烘色彩与物理表面参数摆在一起",
+        "body": "Matcap 查表结果直接参与 Base Color。材质另有 Metallic=1、Roughness=0.2、Specular=0.5，在 Lit 中仍会受到当前灯光反射影响。切换 Base Color 与 Detail Lighting 有助于分别看基色花纹与光照。"
+      }
+    ],
+    "caveat": "AlphaIntensity=1 同时连 Opacity 和 Opacity Mask，但实例覆盖为 Opaque。Matcap 查表本身不接 Emissive。"
+  },
+  "Brow": {
+    "title": "眉毛 · 单独眉贴与柔边半透明",
+    "summary": "PFM0001 槽 0 的 MI_Nikki_Brow 使用双面 Translucent / Default Lit，Surface 透明光照、After DOF，眉毛由独立几何和眉贴资产绘制。",
+    "steps": [
+      {
+        "title": "定位眉贴纹理与 UV 控件",
+        "body": "Brow 使用 T_Eyebrow_0001_D_5S，512×512、sRGB。BrowUV=(1,1,0,0) 用 RG 作平铺、BA 作偏移，经 MF_UV 接 #11 采样。纹理同时提供 RGB 外观与 Alpha 边缘。"
+      },
+      {
+        "title": "看颜色如何变成实例染色",
+        "body": "#11 RGB → #5 MF_Color，BrowColor 约为 (1, 0.775, 0.976)，饱和度和对比度均为 1。Specular=0.5、Roughness=1、Metallic=0，控制其 Lit 表面反应。"
+      },
+      {
+        "title": "把柔边读成独立的透明度",
+        "body": "#11.A × AlphaIntensity（1）→ #12，分别接 Opacity 与 Opacity Mask。因为实例显式覆盖为 Translucent，边缘研究重点是连续 Alpha 和透明合成，不应依据母材质中保留的阈值解释边缘。"
+      }
+    ],
+    "caveat": "眉贴的透明像素可在纹理 A 通道预览查看。面部画面中眉毛与皮肤投影叠加，GBuffer 的 Base Color 可能未包括眉贴。"
+  },
+  "Eyelash": {
+    "title": "睫毛 · Alpha 剪裁与实例双面覆盖",
+    "summary": "PFJ0001 槽 0 的 MI_Nikki_Eyelash 使用 Masked / Default Lit。母材质 Two Sided=False，实例通过 Base Property Overrides 显式覆盖为 True。",
+    "steps": [
+      {
+        "title": "找实际采样的睫毛图案",
+        "body": "实例把 Eyelash 参数换成 T_Nikki_Eyelash_0001_D_01，512×512、sRGB。#3 的 RGB 经 MF_Color 乘 EyelashColor≈(0.995, 0.475, 1.0) 进入 Base Color，饱和度和对比度均为 1。"
+      },
+      {
+        "title": "逐节点追剪裁覆盖率",
+        "body": "#3.A → #9 → #10 → Opacity Mask；剪裁阈值约 0.3333。母图使用常量 Metallic=0，实例 Roughness=0.8、Specular=0.5；基础色与剪裁图案在同一张纹理里，却分别取 RGB 和 A。"
+      },
+      {
+        "title": "把双面的实际状态连回画面",
+        "body": "实例覆盖 Two Sided=True，意味着两面都能进入材质渲染，遮罩负责裁去透明区域。观察时放大面部 Lit，并把睫毛图切到 A 通道查看细缝。"
+      }
+    ],
+    "caveat": "细睫毛在缩小后的诊断预览中容易丢细节。判断 Alpha 结构优先用原图或高分辨率面部图。"
+  }
+}

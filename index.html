@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nikki / 熠熠舞曲 · 材质拆解</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="studio.css">
+  <link rel="stylesheet" href="graph.css">
+  <link rel="stylesheet" href="layer-ui.css?v=3">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">TESTITEM / UNREAL ENGINE 5.9</p>
+    <h1>Nikki<br><em>熠熠舞曲</em></h1>
+    <p class="intro">单独看每套材质绑定的网格，再逐步打开法线、羽片透明层和礼服第二层，比较 UE 实际渲染的变化。</p>
+    <div id="metrics"></div>
+    <div class="bar"><a class="pill" href="#workbench">开始网格与材质分层 ↓</a><button data-preset="front,BaseColor">查看高清渲染</button></div>
+  </div>
+  <figure class="hero-art">
+    <img id="hero-shot" src="renders-hd/stable-face-Lit.preview.webp" data-full="renders-hd/stable-face-Lit.png" tabindex="0" role="button" data-zoom alt="Nikki 面部及上身，UE 原生截帧">
+    <figcaption id="hero-caption"></figcaption>
+  </figure>
+</header>
+<main id="workbench"><nav id="tabs" aria-label="拆解层级"></nav><section id="panel"></section></main>
+<footer>证据源 · Testitem Character 关卡 / UE 官方 ModelContextProtocol / DefaultEngine.ini</footer>
+<dialog id="zoom">
+  <form method="dialog"><span id="zoom-caption"></span><button type="button" id="toggle-pixels" aria-pressed="false">1:1 原像素</button><a id="zoom-original" target="_blank" rel="noopener">打开原始图 ↗</a><button aria-label="关闭图像">关闭 ×</button></form>
+  <div class="zoom-scroll"><img alt=""></div>
+</dialog>
+<script src="data.js?v=3"></script>
+<script src="graph.js"></script>
+<script src="layer-ui.js?v=3"></script>
+<script src="studio.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>

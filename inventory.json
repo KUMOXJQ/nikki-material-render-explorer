@@ -1,0 +1,562 @@
+{
+  "world": "/Game/Character/Character.Character",
+  "actors": [
+    {
+      "label": "PostProcessVolume",
+      "class": "PostProcessVolume",
+      "path": "/Game/Character/Character.Character:PersistentLevel.PostProcessVolume_0"
+    },
+    {
+      "label": "BP_Nikki_熠熠舞曲",
+      "class": "BP_Nikki_熠熠舞曲_C",
+      "path": "/Game/Character/Character.Character:PersistentLevel.BP_Nikki_熠熠舞曲_C_3"
+    },
+    {
+      "label": "SkyAtmosphere",
+      "class": "SkyAtmosphere",
+      "path": "/Game/Character/Character.Character:PersistentLevel.SkyAtmosphere_0"
+    },
+    {
+      "label": "ExponentialHeightFog",
+      "class": "ExponentialHeightFog",
+      "path": "/Game/Character/Character.Character:PersistentLevel.ExponentialHeightFog_0"
+    },
+    {
+      "label": "DirectionalLight",
+      "class": "DirectionalLight",
+      "path": "/Game/Character/Character.Character:PersistentLevel.DirectionalLight_0"
+    },
+    {
+      "label": "SkyLight",
+      "class": "SkyLight",
+      "path": "/Game/Character/Character.Character:PersistentLevel.SkyLight_0"
+    },
+    {
+      "label": "Ground",
+      "class": "StaticMeshActor",
+      "path": "/Game/Character/Character.Character:PersistentLevel.StaticMeshActor_4"
+    }
+  ],
+  "inventory": [
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesJ",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesI",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142ANE_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesG",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesH",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesE",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesD",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_02_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142AEA_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_Color",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Color",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/PFM0001_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_Brow",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Brow",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Eyebrow_0001_D_5S",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Nikki_Eyelash_0001_D_01",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142H_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_Hair",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Hair",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_S0142_SM",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_HAIR_20_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_HAIR_02_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Fiber_IOAD",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesA1",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesA",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesF",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Clothes",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_Tile_0007_90_512_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_Tile_0041_512_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesB",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_02_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesC",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_02_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_ClothesK",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_CorneaBlurMask_A",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Eye_SD_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_EyeIris_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_EyeIris_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_EyePupil_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_EyePupil_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_EyeSparkle_M",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_X6Eye_Mask",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/Skin",
+      "type": "SubsurfaceProfile"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Body_D_3S",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Body_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_BodySpec_Rough_3S",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Head_D_3S_02",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Head_N_withCornea",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_NY0076_Skin_Mask",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_PFC0006_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Spec_Rough_3S",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Eyelash",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_Eyelash",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/PFJ0001_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_CorneaBlur",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_CorneaBlur",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Eye",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_Eye",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Skin",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_SkinBody",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_SkinFace",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_N",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_03_01_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/M_Nikki_Feather",
+      "type": "Material"
+    },
+    {
+      "path": "/Game/Character/Nikki/Materials/MI_Nikki_FeatherA",
+      "type": "MaterialInstanceConstant"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142AHC_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142AHE_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142BB_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/S0142D_SkMesh_001",
+      "type": "StaticMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/BP_Nikki_熠熠舞曲",
+      "type": "Blueprint"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/Nikki熠熠舞曲Action_Skeleton",
+      "type": "Skeleton"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/熠熠舞曲/Nikki熠熠舞曲Action",
+      "type": "SkeletalMesh"
+    },
+    {
+      "path": "/Game/Character/Nikki/Render",
+      "type": "LevelSequence"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/BP_Nikki_熠熠舞曲",
+      "type": "ObjectRedirector"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/BP_Nikki_熠熠舞曲",
+      "type": "ObjectRedirector"
+    },
+    {
+      "path": "/Game/Character/Nikki/Mesh/BP_Nikki_熠熠舞曲",
+      "type": "ObjectRedirector"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Body_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_Head_D_LOD1",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/T_PFC0006_Inside_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/MakeUp/T_PFC0001_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/MakeUp/T_PFC0003_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/MakeUp/T_PFC0011_D",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_Mask",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_SS",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_Mask",
+      "type": "Texture2D"
+    },
+    {
+      "path": "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_Mask",
+      "type": "Texture2D"
+    }
+  ]
+}

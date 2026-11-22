@@ -1,0 +1,212 @@
+{
+  "face-Lit": {
+    "mode": "Lit",
+    "file": "renders-hd/stable-face-Lit.png",
+    "preview": "renders-hd/stable-face-Lit.preview.webp",
+    "width": 2600,
+    "height": 2600,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 89193,
+      "worldTimeSeconds": 1169.057422272861
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 固定机位 · 12 张 Lit 图在线性显示空间合成",
+    "frameCount": 12
+  },
+  "front": {
+    "mode": "Lit",
+    "file": "renders-hd/stable-front.png",
+    "preview": "renders-hd/stable-front.preview.webp",
+    "width": 2560,
+    "height": 3200,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 89644,
+      "worldTimeSeconds": 1179.8380324468017
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 固定机位 · 12 张 Lit 图在线性显示空间合成",
+    "frameCount": 12
+  },
+  "dress-Lit": {
+    "mode": "Lit",
+    "file": "renders-hd/stable-dress-Lit.png",
+    "preview": "renders-hd/stable-dress-Lit.preview.webp",
+    "width": 2240,
+    "height": 2520,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 90086,
+      "worldTimeSeconds": 1190.455744113773
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 固定机位 · 12 张 Lit 图在线性显示空间合成",
+    "frameCount": 12
+  }
+}

@@ -1,0 +1,821 @@
+{
+  "/Engine/EngineMaterials/T_Default_Material_Grid_M.T_Default_Material_Grid_M": {
+    "file": "textures/000.png",
+    "channels": {
+      "R": "channels/000-R.png",
+      "G": "channels/000-G.png",
+      "B": "channels/000-B.png",
+      "A": "channels/000-A.png"
+    }
+  },
+  "/Engine/EngineMaterials/T_Default_Material_Grid_N.T_Default_Material_Grid_N": {
+    "file": "textures/001.png",
+    "channels": {
+      "R": "channels/001-R.png",
+      "G": "channels/001-G.png",
+      "B": "channels/001-B.png",
+      "A": "channels/001-A.png"
+    }
+  },
+  "/Game/Character/Material/Matcap/T_GlassMatCap_02.T_GlassMatCap_02": {
+    "file": "textures/002.png",
+    "channels": {
+      "R": "channels/002-R.png",
+      "G": "channels/002-G.png",
+      "B": "channels/002-B.png",
+      "A": "channels/002-A.png"
+    }
+  },
+  "/Game/Character/Material/T_White_srgb.T_White_srgb": {
+    "file": "textures/003.png",
+    "channels": {
+      "R": "channels/003-R.png",
+      "G": "channels/003-G.png",
+      "B": "channels/003-B.png",
+      "A": "channels/003-A.png"
+    }
+  },
+  "/Game/Character/Material/Matcap/T_Matcap_Array_01_20.T_Matcap_Array_01_20": {
+    "file": "textures/004.png",
+    "channels": {
+      "R": "channels/004-R.png",
+      "G": "channels/004-G.png",
+      "B": "channels/004-B.png",
+      "A": "channels/004-A.png"
+    }
+  },
+  "/Game/Character/Material/Matcap/matcap__122_.matcap__122_": {
+    "file": "textures/005.png",
+    "channels": {
+      "R": "channels/005-R.png",
+      "G": "channels/005-G.png",
+      "B": "channels/005-B.png",
+      "A": "channels/005-A.png"
+    }
+  },
+  "/Game/Character/Material/T_White_Linear.T_White_Linear": {
+    "file": "textures/006.png",
+    "channels": {
+      "R": "channels/006-R.png",
+      "G": "channels/006-G.png",
+      "B": "channels/006-B.png",
+      "A": "channels/006-A.png"
+    }
+  },
+  "/Game/Character/Material/T_Generic_N.T_Generic_N": {
+    "file": "textures/007.png",
+    "channels": {
+      "R": "channels/007-R.png",
+      "G": "channels/007-G.png",
+      "B": "channels/007-B.png",
+      "A": "channels/007-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/MakeUp/T_PFC0001_D.T_PFC0001_D": {
+    "file": "textures/008.png",
+    "channels": {
+      "R": "channels/008-R.png",
+      "G": "channels/008-G.png",
+      "B": "channels/008-B.png",
+      "A": "channels/008-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/MakeUp/T_PFC0003_D.T_PFC0003_D": {
+    "file": "textures/009.png",
+    "channels": {
+      "R": "channels/009-R.png",
+      "G": "channels/009-G.png",
+      "B": "channels/009-B.png",
+      "A": "channels/009-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/MakeUp/T_PFC0011_D.T_PFC0011_D": {
+    "file": "textures/010.png",
+    "channels": {
+      "R": "channels/010-R.png",
+      "G": "channels/010-G.png",
+      "B": "channels/010-B.png",
+      "A": "channels/010-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_BodySpec_Rough_3S.T_BodySpec_Rough_3S": {
+    "file": "textures/011.png",
+    "channels": {
+      "R": "channels/011-R.png",
+      "G": "channels/011-G.png",
+      "B": "channels/011-B.png",
+      "A": "channels/011-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Body_D.T_Body_D": {
+    "file": "textures/012.png",
+    "channels": {
+      "R": "channels/012-R.png",
+      "G": "channels/012-G.png",
+      "B": "channels/012-B.png",
+      "A": "channels/012-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Body_D_3S.T_Body_D_3S": {
+    "file": "textures/013.png",
+    "channels": {
+      "R": "channels/013-R.png",
+      "G": "channels/013-G.png",
+      "B": "channels/013-B.png",
+      "A": "channels/013-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Body_N.T_Body_N": {
+    "file": "textures/014.png",
+    "channels": {
+      "R": "channels/014-R.png",
+      "G": "channels/014-G.png",
+      "B": "channels/014-B.png",
+      "A": "channels/014-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_CorneaBlurMask_A.T_CorneaBlurMask_A": {
+    "file": "textures/015.png",
+    "channels": {
+      "R": "channels/015-R.png",
+      "G": "channels/015-G.png",
+      "B": "channels/015-B.png",
+      "A": "channels/015-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_EyeIris_D.T_EyeIris_D": {
+    "file": "textures/016.png",
+    "channels": {
+      "R": "channels/016-R.png",
+      "G": "channels/016-G.png",
+      "B": "channels/016-B.png",
+      "A": "channels/016-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_EyeIris_N.T_EyeIris_N": {
+    "file": "textures/017.png",
+    "channels": {
+      "R": "channels/017-R.png",
+      "G": "channels/017-G.png",
+      "B": "channels/017-B.png",
+      "A": "channels/017-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_EyePupil_D.T_EyePupil_D": {
+    "file": "textures/018.png",
+    "channels": {
+      "R": "channels/018-R.png",
+      "G": "channels/018-G.png",
+      "B": "channels/018-B.png",
+      "A": "channels/018-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_EyePupil_N.T_EyePupil_N": {
+    "file": "textures/019.png",
+    "channels": {
+      "R": "channels/019-R.png",
+      "G": "channels/019-G.png",
+      "B": "channels/019-B.png",
+      "A": "channels/019-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_EyeSparkle_M.T_EyeSparkle_M": {
+    "file": "textures/020.png",
+    "channels": {
+      "R": "channels/020-R.png",
+      "G": "channels/020-G.png",
+      "B": "channels/020-B.png",
+      "A": "channels/020-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Eye_SD_D.T_Eye_SD_D": {
+    "file": "textures/021.png",
+    "channels": {
+      "R": "channels/021-R.png",
+      "G": "channels/021-G.png",
+      "B": "channels/021-B.png",
+      "A": "channels/021-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Eyebrow_0001_D_5S.T_Eyebrow_0001_D_5S": {
+    "file": "textures/022.png",
+    "channels": {
+      "R": "channels/022-R.png",
+      "G": "channels/022-G.png",
+      "B": "channels/022-B.png",
+      "A": "channels/022-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Fiber_IOAD.T_Fiber_IOAD": {
+    "file": "textures/023.png",
+    "channels": {
+      "R": "channels/023-R.png",
+      "G": "channels/023-G.png",
+      "B": "channels/023-B.png",
+      "A": "channels/023-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_HAIR_02_N.T_HAIR_02_N": {
+    "file": "textures/024.png",
+    "channels": {
+      "R": "channels/024-R.png",
+      "G": "channels/024-G.png",
+      "B": "channels/024-B.png",
+      "A": "channels/024-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_HAIR_20_D.T_HAIR_20_D": {
+    "file": "textures/025.png",
+    "channels": {
+      "R": "channels/025-R.png",
+      "G": "channels/025-G.png",
+      "B": "channels/025-B.png",
+      "A": "channels/025-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Head_D_3S_02.T_Head_D_3S_02": {
+    "file": "textures/026.png",
+    "channels": {
+      "R": "channels/026-R.png",
+      "G": "channels/026-G.png",
+      "B": "channels/026-B.png",
+      "A": "channels/026-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Head_D_LOD1.T_Head_D_LOD1": {
+    "file": "textures/027.png",
+    "channels": {
+      "R": "channels/027-R.png",
+      "G": "channels/027-G.png",
+      "B": "channels/027-B.png",
+      "A": "channels/027-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Head_N_withCornea.T_Head_N_withCornea": {
+    "file": "textures/028.png",
+    "channels": {
+      "R": "channels/028-R.png",
+      "G": "channels/028-G.png",
+      "B": "channels/028-B.png",
+      "A": "channels/028-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_NY0076_Skin_Mask.T_NY0076_Skin_Mask": {
+    "file": "textures/029.png",
+    "channels": {
+      "R": "channels/029-R.png",
+      "G": "channels/029-G.png",
+      "B": "channels/029-B.png",
+      "A": "channels/029-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Nikki_Eyelash_0001_D_01.T_Nikki_Eyelash_0001_D_01": {
+    "file": "textures/030.png",
+    "channels": {
+      "R": "channels/030-R.png",
+      "G": "channels/030-G.png",
+      "B": "channels/030-B.png",
+      "A": "channels/030-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_PFC0006_D.T_PFC0006_D": {
+    "file": "textures/031.png",
+    "channels": {
+      "R": "channels/031-R.png",
+      "G": "channels/031-G.png",
+      "B": "channels/031-B.png",
+      "A": "channels/031-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_PFC0006_Inside_D.T_PFC0006_Inside_D": {
+    "file": "textures/032.png",
+    "channels": {
+      "R": "channels/032-R.png",
+      "G": "channels/032-G.png",
+      "B": "channels/032-B.png",
+      "A": "channels/032-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_S0142_SM.T_S0142_SM": {
+    "file": "textures/033.png",
+    "channels": {
+      "R": "channels/033-R.png",
+      "G": "channels/033-G.png",
+      "B": "channels/033-B.png",
+      "A": "channels/033-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_Spec_Rough_3S.T_Spec_Rough_3S": {
+    "file": "textures/034.png",
+    "channels": {
+      "R": "channels/034-R.png",
+      "G": "channels/034-G.png",
+      "B": "channels/034-B.png",
+      "A": "channels/034-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/T_X6Eye_Mask.T_X6Eye_Mask": {
+    "file": "textures/035.png",
+    "channels": {
+      "R": "channels/035-R.png",
+      "G": "channels/035-G.png",
+      "B": "channels/035-B.png",
+      "A": "channels/035-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_D.T_S0142AEA_01_01_01_D": {
+    "file": "textures/036.png",
+    "channels": {
+      "R": "channels/036-R.png",
+      "G": "channels/036-G.png",
+      "B": "channels/036-B.png",
+      "A": "channels/036-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_M.T_S0142AEA_01_01_01_M": {
+    "file": "textures/037.png",
+    "channels": {
+      "R": "channels/037-R.png",
+      "G": "channels/037-G.png",
+      "B": "channels/037-B.png",
+      "A": "channels/037-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_01_01_N.T_S0142AEA_01_01_01_N": {
+    "file": "textures/038.png",
+    "channels": {
+      "R": "channels/038-R.png",
+      "G": "channels/038-G.png",
+      "B": "channels/038-B.png",
+      "A": "channels/038-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AEA_01_02_01_D.T_S0142AEA_01_02_01_D": {
+    "file": "textures/039.png",
+    "channels": {
+      "R": "channels/039-R.png",
+      "G": "channels/039-G.png",
+      "B": "channels/039-B.png",
+      "A": "channels/039-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_D.T_S0142AHC_01_01_01_D": {
+    "file": "textures/040.png",
+    "channels": {
+      "R": "channels/040-R.png",
+      "G": "channels/040-G.png",
+      "B": "channels/040-B.png",
+      "A": "channels/040-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_M.T_S0142AHC_01_01_01_M": {
+    "file": "textures/041.png",
+    "channels": {
+      "R": "channels/041-R.png",
+      "G": "channels/041-G.png",
+      "B": "channels/041-B.png",
+      "A": "channels/041-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_Mask.T_S0142AHC_01_01_01_Mask": {
+    "file": "textures/042.png",
+    "channels": {
+      "R": "channels/042-R.png",
+      "G": "channels/042-G.png",
+      "B": "channels/042-B.png",
+      "A": "channels/042-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_01_01_01_N.T_S0142AHC_01_01_01_N": {
+    "file": "textures/043.png",
+    "channels": {
+      "R": "channels/043-R.png",
+      "G": "channels/043-G.png",
+      "B": "channels/043-B.png",
+      "A": "channels/043-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_02_02_01_D.T_S0142AHC_02_02_01_D": {
+    "file": "textures/044.png",
+    "channels": {
+      "R": "channels/044-R.png",
+      "G": "channels/044-G.png",
+      "B": "channels/044-B.png",
+      "A": "channels/044-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_D.T_S0142AHC_04_01_01_D": {
+    "file": "textures/045.png",
+    "channels": {
+      "R": "channels/045-R.png",
+      "G": "channels/045-G.png",
+      "B": "channels/045-B.png",
+      "A": "channels/045-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_N.T_S0142AHC_04_01_01_N": {
+    "file": "textures/046.png",
+    "channels": {
+      "R": "channels/046-R.png",
+      "G": "channels/046-G.png",
+      "B": "channels/046-B.png",
+      "A": "channels/046-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_01_01_SS.T_S0142AHC_04_01_01_SS": {
+    "file": "textures/047.png",
+    "channels": {
+      "R": "channels/047-R.png",
+      "G": "channels/047-G.png",
+      "B": "channels/047-B.png",
+      "A": "channels/047-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHC_04_03_01_D.T_S0142AHC_04_03_01_D": {
+    "file": "textures/048.png",
+    "channels": {
+      "R": "channels/048-R.png",
+      "G": "channels/048-G.png",
+      "B": "channels/048-B.png",
+      "A": "channels/048-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_D.T_S0142AHE_01_01_01_D": {
+    "file": "textures/049.png",
+    "channels": {
+      "R": "channels/049-R.png",
+      "G": "channels/049-G.png",
+      "B": "channels/049-B.png",
+      "A": "channels/049-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_M.T_S0142AHE_01_01_01_M": {
+    "file": "textures/050.png",
+    "channels": {
+      "R": "channels/050-R.png",
+      "G": "channels/050-G.png",
+      "B": "channels/050-B.png",
+      "A": "channels/050-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_01_01_N.T_S0142AHE_01_01_01_N": {
+    "file": "textures/051.png",
+    "channels": {
+      "R": "channels/051-R.png",
+      "G": "channels/051-G.png",
+      "B": "channels/051-B.png",
+      "A": "channels/051-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_02_01_D.T_S0142AHE_01_02_01_D": {
+    "file": "textures/052.png",
+    "channels": {
+      "R": "channels/052-R.png",
+      "G": "channels/052-G.png",
+      "B": "channels/052-B.png",
+      "A": "channels/052-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_D.T_S0142AHE_01_03_01_D": {
+    "file": "textures/053.png",
+    "channels": {
+      "R": "channels/053-R.png",
+      "G": "channels/053-G.png",
+      "B": "channels/053-B.png",
+      "A": "channels/053-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_M.T_S0142AHE_01_03_01_M": {
+    "file": "textures/054.png",
+    "channels": {
+      "R": "channels/054-R.png",
+      "G": "channels/054-G.png",
+      "B": "channels/054-B.png",
+      "A": "channels/054-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142AHE_01_03_01_N.T_S0142AHE_01_03_01_N": {
+    "file": "textures/055.png",
+    "channels": {
+      "R": "channels/055-R.png",
+      "G": "channels/055-G.png",
+      "B": "channels/055-B.png",
+      "A": "channels/055-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_D.T_S0142ANE_01_01_01_D": {
+    "file": "textures/056.png",
+    "channels": {
+      "R": "channels/056-R.png",
+      "G": "channels/056-G.png",
+      "B": "channels/056-B.png",
+      "A": "channels/056-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_M.T_S0142ANE_01_01_01_M": {
+    "file": "textures/057.png",
+    "channels": {
+      "R": "channels/057-R.png",
+      "G": "channels/057-G.png",
+      "B": "channels/057-B.png",
+      "A": "channels/057-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_01_01_N.T_S0142ANE_01_01_01_N": {
+    "file": "textures/058.png",
+    "channels": {
+      "R": "channels/058-R.png",
+      "G": "channels/058-G.png",
+      "B": "channels/058-B.png",
+      "A": "channels/058-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_02_01_D.T_S0142ANE_01_02_01_D": {
+    "file": "textures/059.png",
+    "channels": {
+      "R": "channels/059-R.png",
+      "G": "channels/059-G.png",
+      "B": "channels/059-B.png",
+      "A": "channels/059-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_D.T_S0142ANE_01_03_01_D": {
+    "file": "textures/060.png",
+    "channels": {
+      "R": "channels/060-R.png",
+      "G": "channels/060-G.png",
+      "B": "channels/060-B.png",
+      "A": "channels/060-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_M.T_S0142ANE_01_03_01_M": {
+    "file": "textures/061.png",
+    "channels": {
+      "R": "channels/061-R.png",
+      "G": "channels/061-G.png",
+      "B": "channels/061-B.png",
+      "A": "channels/061-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142ANE_01_03_01_N.T_S0142ANE_01_03_01_N": {
+    "file": "textures/062.png",
+    "channels": {
+      "R": "channels/062-R.png",
+      "G": "channels/062-G.png",
+      "B": "channels/062-B.png",
+      "A": "channels/062-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_D.T_S0142BB_01_01_01_D": {
+    "file": "textures/063.png",
+    "channels": {
+      "R": "channels/063-R.png",
+      "G": "channels/063-G.png",
+      "B": "channels/063-B.png",
+      "A": "channels/063-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_M.T_S0142BB_01_01_01_M": {
+    "file": "textures/064.png",
+    "channels": {
+      "R": "channels/064-R.png",
+      "G": "channels/064-G.png",
+      "B": "channels/064-B.png",
+      "A": "channels/064-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_01_01_N.T_S0142BB_01_01_01_N": {
+    "file": "textures/065.png",
+    "channels": {
+      "R": "channels/065-R.png",
+      "G": "channels/065-G.png",
+      "B": "channels/065-B.png",
+      "A": "channels/065-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_02_01_D.T_S0142BB_01_02_01_D": {
+    "file": "textures/066.png",
+    "channels": {
+      "R": "channels/066-R.png",
+      "G": "channels/066-G.png",
+      "B": "channels/066-B.png",
+      "A": "channels/066-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_D.T_S0142BB_01_03_01_D": {
+    "file": "textures/067.png",
+    "channels": {
+      "R": "channels/067-R.png",
+      "G": "channels/067-G.png",
+      "B": "channels/067-B.png",
+      "A": "channels/067-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_M.T_S0142BB_01_03_01_M": {
+    "file": "textures/068.png",
+    "channels": {
+      "R": "channels/068-R.png",
+      "G": "channels/068-G.png",
+      "B": "channels/068-B.png",
+      "A": "channels/068-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_Mask.T_S0142BB_01_03_01_Mask": {
+    "file": "textures/069.png",
+    "channels": {
+      "R": "channels/069-R.png",
+      "G": "channels/069-G.png",
+      "B": "channels/069-B.png",
+      "A": "channels/069-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142BB_01_03_01_N.T_S0142BB_01_03_01_N": {
+    "file": "textures/070.png",
+    "channels": {
+      "R": "channels/070-R.png",
+      "G": "channels/070-G.png",
+      "B": "channels/070-B.png",
+      "A": "channels/070-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_D.T_S0142D_01_01_01_D": {
+    "file": "textures/071.png",
+    "channels": {
+      "R": "channels/071-R.png",
+      "G": "channels/071-G.png",
+      "B": "channels/071-B.png",
+      "A": "channels/071-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_M.T_S0142D_01_01_01_M": {
+    "file": "textures/072.png",
+    "channels": {
+      "R": "channels/072-R.png",
+      "G": "channels/072-G.png",
+      "B": "channels/072-B.png",
+      "A": "channels/072-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_Mask.T_S0142D_01_01_01_Mask": {
+    "file": "textures/073.png",
+    "channels": {
+      "R": "channels/073-R.png",
+      "G": "channels/073-G.png",
+      "B": "channels/073-B.png",
+      "A": "channels/073-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_01_01_N.T_S0142D_01_01_01_N": {
+    "file": "textures/074.png",
+    "channels": {
+      "R": "channels/074-R.png",
+      "G": "channels/074-G.png",
+      "B": "channels/074-B.png",
+      "A": "channels/074-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_02_01_D.T_S0142D_01_02_01_D": {
+    "file": "textures/075.png",
+    "channels": {
+      "R": "channels/075-R.png",
+      "G": "channels/075-G.png",
+      "B": "channels/075-B.png",
+      "A": "channels/075-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_D.T_S0142D_01_03_01_D": {
+    "file": "textures/076.png",
+    "channels": {
+      "R": "channels/076-R.png",
+      "G": "channels/076-G.png",
+      "B": "channels/076-B.png",
+      "A": "channels/076-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_M.T_S0142D_01_03_01_M": {
+    "file": "textures/077.png",
+    "channels": {
+      "R": "channels/077-R.png",
+      "G": "channels/077-G.png",
+      "B": "channels/077-B.png",
+      "A": "channels/077-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_01_N.T_S0142D_01_03_01_N": {
+    "file": "textures/078.png",
+    "channels": {
+      "R": "channels/078-R.png",
+      "G": "channels/078-G.png",
+      "B": "channels/078-B.png",
+      "A": "channels/078-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_01_03_02_D.T_S0142D_01_03_02_D": {
+    "file": "textures/079.png",
+    "channels": {
+      "R": "channels/079-R.png",
+      "G": "channels/079-G.png",
+      "B": "channels/079-B.png",
+      "A": "channels/079-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_D.T_S0142D_02_01_01_D": {
+    "file": "textures/080.png",
+    "channels": {
+      "R": "channels/080-R.png",
+      "G": "channels/080-G.png",
+      "B": "channels/080-B.png",
+      "A": "channels/080-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_M.T_S0142D_02_01_01_M": {
+    "file": "textures/081.png",
+    "channels": {
+      "R": "channels/081-R.png",
+      "G": "channels/081-G.png",
+      "B": "channels/081-B.png",
+      "A": "channels/081-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_01_01_N.T_S0142D_02_01_01_N": {
+    "file": "textures/082.png",
+    "channels": {
+      "R": "channels/082-R.png",
+      "G": "channels/082-G.png",
+      "B": "channels/082-B.png",
+      "A": "channels/082-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_D.T_S0142D_02_03_01_D": {
+    "file": "textures/083.png",
+    "channels": {
+      "R": "channels/083-R.png",
+      "G": "channels/083-G.png",
+      "B": "channels/083-B.png",
+      "A": "channels/083-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_M.T_S0142D_02_03_01_M": {
+    "file": "textures/084.png",
+    "channels": {
+      "R": "channels/084-R.png",
+      "G": "channels/084-G.png",
+      "B": "channels/084-B.png",
+      "A": "channels/084-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142D_02_03_01_N.T_S0142D_02_03_01_N": {
+    "file": "textures/085.png",
+    "channels": {
+      "R": "channels/085-R.png",
+      "G": "channels/085-G.png",
+      "B": "channels/085-B.png",
+      "A": "channels/085-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_01_01_N.T_S0142G_01_01_01_N": {
+    "file": "textures/086.png",
+    "channels": {
+      "R": "channels/086-R.png",
+      "G": "channels/086-G.png",
+      "B": "channels/086-B.png",
+      "A": "channels/086-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_02_01_D.T_S0142G_01_02_01_D": {
+    "file": "textures/087.png",
+    "channels": {
+      "R": "channels/087-R.png",
+      "G": "channels/087-G.png",
+      "B": "channels/087-B.png",
+      "A": "channels/087-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_S0142G_01_03_01_D.T_S0142G_01_03_01_D": {
+    "file": "textures/088.png",
+    "channels": {
+      "R": "channels/088-R.png",
+      "G": "channels/088-G.png",
+      "B": "channels/088-B.png",
+      "A": "channels/088-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_Tile_0007_90_512_N.T_Tile_0007_90_512_N": {
+    "file": "textures/089.png",
+    "channels": {
+      "R": "channels/089-R.png",
+      "G": "channels/089-G.png",
+      "B": "channels/089-B.png",
+      "A": "channels/089-A.png"
+    }
+  },
+  "/Game/Character/Nikki/Tex/Tex_Clothes/T_Tile_0041_512_N.T_Tile_0041_512_N": {
+    "file": "textures/090.png",
+    "channels": {
+      "R": "channels/090-R.png",
+      "G": "channels/090-G.png",
+      "B": "channels/090-B.png",
+      "A": "channels/090-A.png"
+    }
+  }
+}

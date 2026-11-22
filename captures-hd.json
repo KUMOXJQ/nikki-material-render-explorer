@@ -1,0 +1,2072 @@
+{
+  "front": {
+    "mode": "Lit",
+    "file": "renders-hd/front.png",
+    "preview": "renders-hd/front.preview.webp",
+    "width": 1920,
+    "height": 2400,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73318,
+      "worldTimeSeconds": 948.5127817541361
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Lit": {
+    "mode": "Lit",
+    "file": "renders-hd/face-Lit.png",
+    "preview": "renders-hd/face-Lit.preview.webp",
+    "width": 2200,
+    "height": 2200,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73374,
+      "worldTimeSeconds": 949.6439114585519
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-Lit": {
+    "mode": "Lit",
+    "file": "renders-hd/dress-Lit.png",
+    "preview": "renders-hd/dress-Lit.preview.webp",
+    "width": 1920,
+    "height": 2160,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73413,
+      "worldTimeSeconds": 950.5713889636099
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "reverse": {
+    "mode": "Lit",
+    "file": "renders-hd/reverse.png",
+    "preview": "renders-hd/reverse.preview.webp",
+    "width": 1760,
+    "height": 2200,
+    "framing": "rear",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": -162,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": 90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Lit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73456,
+      "worldTimeSeconds": 951.5410340689123
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": -162,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": 90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "BaseColor": {
+    "mode": "BaseColor",
+    "file": "renders-hd/BaseColor.png",
+    "preview": "renders-hd/BaseColor.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "BaseColor",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73490,
+      "worldTimeSeconds": 952.3754469752312
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Normal": {
+    "mode": "Normal",
+    "file": "renders-hd/Normal.png",
+    "preview": "renders-hd/Normal.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Normal",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73516,
+      "worldTimeSeconds": 952.8320273719728
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Roughness": {
+    "mode": "Roughness",
+    "file": "renders-hd/Roughness.png",
+    "preview": "renders-hd/Roughness.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Roughness",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73545,
+      "worldTimeSeconds": 953.3394192717969
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Metallic": {
+    "mode": "Metallic",
+    "file": "renders-hd/Metallic.png",
+    "preview": "renders-hd/Metallic.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Metallic",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73571,
+      "worldTimeSeconds": 953.7981166727841
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Specular": {
+    "mode": "Specular",
+    "file": "renders-hd/Specular.png",
+    "preview": "renders-hd/Specular.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Specular",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73595,
+      "worldTimeSeconds": 954.222109772265
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "ShadingModel": {
+    "mode": "ShadingModel",
+    "file": "renders-hd/ShadingModel.png",
+    "preview": "renders-hd/ShadingModel.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "ShadingModel",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73621,
+      "worldTimeSeconds": 954.6437368690968
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Opacity": {
+    "mode": "Opacity",
+    "file": "renders-hd/Opacity.png",
+    "preview": "renders-hd/Opacity.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Opacity",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73648,
+      "worldTimeSeconds": 955.0809098668396
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "SubsurfaceColor": {
+    "mode": "SubsurfaceColor",
+    "file": "renders-hd/SubsurfaceColor.png",
+    "preview": "renders-hd/SubsurfaceColor.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "SubsurfaceColor",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73674,
+      "worldTimeSeconds": 955.4897171668708
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "SeparateTranslucencyRGB": {
+    "mode": "SeparateTranslucencyRGB",
+    "file": "renders-hd/SeparateTranslucencyRGB.png",
+    "preview": "renders-hd/SeparateTranslucencyRGB.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "SeparateTranslucencyRGB",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73702,
+      "worldTimeSeconds": 955.9394159726799
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "DetailLighting": {
+    "mode": "DetailLighting",
+    "file": "renders-hd/DetailLighting.png",
+    "preview": "renders-hd/DetailLighting.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "DetailLighting",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73729,
+      "worldTimeSeconds": 956.3723594732583
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "Unlit": {
+    "mode": "Unlit",
+    "file": "renders-hd/Unlit.png",
+    "preview": "renders-hd/Unlit.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Unlit",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73763,
+      "worldTimeSeconds": 957.2151489779353
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "SceneDepth": {
+    "mode": "SceneDepth",
+    "file": "renders-hd/SceneDepth.png",
+    "preview": "renders-hd/SceneDepth.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "SceneDepth",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73792,
+      "worldTimeSeconds": 957.6967705786228
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "ShaderComplexity": {
+    "mode": "ShaderComplexity",
+    "file": "renders-hd/ShaderComplexity.png",
+    "preview": "renders-hd/ShaderComplexity.preview.webp",
+    "width": 1600,
+    "height": 2000,
+    "framing": "full",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 334,
+          "z": 105
+        },
+        "rotation": {
+          "pitch": -4.6106493186606095,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 45,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "ShaderComplexity",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73821,
+      "worldTimeSeconds": 958.1656760759652
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 334,
+        "z": 105
+      },
+      "rotation": {
+        "pitch": -4.6106493186606095,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 45,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-BaseColor": {
+    "mode": "BaseColor",
+    "file": "renders-hd/face-BaseColor.png",
+    "preview": "renders-hd/face-BaseColor.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "BaseColor",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73851,
+      "worldTimeSeconds": 958.6464557722211
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Normal": {
+    "mode": "Normal",
+    "file": "renders-hd/face-Normal.png",
+    "preview": "renders-hd/face-Normal.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Normal",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73883,
+      "worldTimeSeconds": 959.2375912666321
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Roughness": {
+    "mode": "Roughness",
+    "file": "renders-hd/face-Roughness.png",
+    "preview": "renders-hd/face-Roughness.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Roughness",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73920,
+      "worldTimeSeconds": 959.9814047515392
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Specular": {
+    "mode": "Specular",
+    "file": "renders-hd/face-Specular.png",
+    "preview": "renders-hd/face-Specular.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Specular",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73950,
+      "worldTimeSeconds": 960.5097792558372
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Metallic": {
+    "mode": "Metallic",
+    "file": "renders-hd/face-Metallic.png",
+    "preview": "renders-hd/face-Metallic.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Metallic",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 73983,
+      "worldTimeSeconds": 961.0830377601087
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-ShadingModel": {
+    "mode": "ShadingModel",
+    "file": "renders-hd/face-ShadingModel.png",
+    "preview": "renders-hd/face-ShadingModel.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "ShadingModel",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74011,
+      "worldTimeSeconds": 961.5270468629897
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-Opacity": {
+    "mode": "Opacity",
+    "file": "renders-hd/face-Opacity.png",
+    "preview": "renders-hd/face-Opacity.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Opacity",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74037,
+      "worldTimeSeconds": 961.9500711634755
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "face-SeparateTranslucencyRGB": {
+    "mode": "SeparateTranslucencyRGB",
+    "file": "renders-hd/face-SeparateTranslucencyRGB.png",
+    "preview": "renders-hd/face-SeparateTranslucencyRGB.preview.webp",
+    "width": 1800,
+    "height": 1800,
+    "framing": "face",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 205,
+          "z": 153
+        },
+        "rotation": {
+          "pitch": -5.75826016436676,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 29,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "SeparateTranslucencyRGB",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74065,
+      "worldTimeSeconds": 962.4041105657816
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 205,
+        "z": 153
+      },
+      "rotation": {
+        "pitch": -5.75826016436676,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 29,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-BaseColor": {
+    "mode": "BaseColor",
+    "file": "renders-hd/dress-BaseColor.png",
+    "preview": "renders-hd/dress-BaseColor.preview.webp",
+    "width": 1600,
+    "height": 1800,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "BaseColor",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74092,
+      "worldTimeSeconds": 962.8644878678024
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-Normal": {
+    "mode": "Normal",
+    "file": "renders-hd/dress-Normal.png",
+    "preview": "renders-hd/dress-Normal.preview.webp",
+    "width": 1600,
+    "height": 1800,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Normal",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74126,
+      "worldTimeSeconds": 963.5036693736911
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-Roughness": {
+    "mode": "Roughness",
+    "file": "renders-hd/dress-Roughness.png",
+    "preview": "renders-hd/dress-Roughness.preview.webp",
+    "width": 1600,
+    "height": 1800,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Roughness",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74163,
+      "worldTimeSeconds": 964.255935959518
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-Metallic": {
+    "mode": "Metallic",
+    "file": "renders-hd/dress-Metallic.png",
+    "preview": "renders-hd/dress-Metallic.preview.webp",
+    "width": 1600,
+    "height": 1800,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "Metallic",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74192,
+      "worldTimeSeconds": 964.7550959661603
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  },
+  "dress-SeparateTranslucencyRGB": {
+    "mode": "SeparateTranslucencyRGB",
+    "file": "renders-hd/dress-SeparateTranslucencyRGB.png",
+    "preview": "renders-hd/dress-SeparateTranslucencyRGB.preview.webp",
+    "width": 1600,
+    "height": 1800,
+    "framing": "dress",
+    "metadata": {
+      "path": "Offscreen",
+      "world": {
+        "world": {
+          "refPath": "/Game/Character/Character.Character"
+        },
+        "worldType": "Editor",
+        "mapPath": "/Game/Character/Character",
+        "pIEInstance": -1,
+        "bCanCapture": true
+      },
+      "camera": {
+        "location": {
+          "x": 73,
+          "y": 255,
+          "z": 110
+        },
+        "rotation": {
+          "pitch": -6.749174789569653,
+          "yaw": -90,
+          "roll": 0
+        },
+        "projectionMode": "Perspective",
+        "fOV": 33,
+        "orthoWidth": 512
+      },
+      "viewSource": "Explicit camera snapshot",
+      "mode": "SeparateTranslucencyRGB",
+      "visualizationSubMode": "",
+      "screenPercentage": 1,
+      "sourceDimensions": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMin": {
+        "x": 0,
+        "y": 0
+      },
+      "viewRectMax": {
+        "x": 0,
+        "y": 0
+      },
+      "requestFrameNumber": 74220,
+      "worldTimeSeconds": 965.2103793621063
+    },
+    "camera": {
+      "location": {
+        "x": 73,
+        "y": 255,
+        "z": 110
+      },
+      "rotation": {
+        "pitch": -6.749174789569653,
+        "yaw": -90,
+        "roll": 0
+      },
+      "fOV": 33,
+      "projectionMode": "Perspective"
+    },
+    "warnings": [],
+    "method": "UE 官方 MCP 离屏单帧 · 100% 渲染比例"
+  }
+}

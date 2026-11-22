@@ -1,0 +1,297 @@
+.nikki-graph {
+  --ng-bg:#181620;
+  --ng-panel:#242031;
+  --ng-panel-deep:#1e1928;
+  --ng-border:#51465e;
+  --ng-ink:#f9eefc;
+  --ng-dim:#cbbdd6;
+  --ng-highlight:#f4bddc;
+  color:var(--ng-ink);
+  background:var(--ng-bg);
+  border:1px solid var(--ng-border);
+  border-radius:14px;
+  padding:14px;
+}
+.nikki-graph > summary {
+  color:var(--ng-ink);
+  font-size:1.06rem;
+}
+.ng-summary-count {
+  color:var(--ng-dim);
+  font-size:.8rem;
+  font-weight:400;
+  margin-inline-start:.65rem;
+}
+.nikki-graph .ng-help {
+  color:var(--ng-dim);
+  font-size:.85rem;
+  margin-block:.6rem;
+}
+.nikki-graph .ng-toolbar {
+  display:flex;
+  align-items:end;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-block:12px;
+}
+.ng-toolbar label {
+  display:grid;
+  color:var(--ng-dim);
+  font-size:.79rem;
+  font-weight:650;
+  min-width:120px;
+  flex:1 1 140px;
+  gap:4px;
+}
+.ng-toolbar label:first-child {
+  flex:2 1 220px;
+}
+.nikki-graph .ng-toolbar input,
+.nikki-graph .ng-toolbar select {
+  display:block;
+  width:100%;
+  min-width:0;
+  color:var(--ng-ink);
+  background:var(--ng-panel-deep);
+  border-color:var(--ng-border);
+  font-size:.87rem;
+}
+.ng-chart-scroll {
+  position:relative;
+  overflow:auto;
+  max-height:580px;
+  border:1px solid var(--ng-border);
+  border-radius:10px;
+  background:
+    radial-gradient(circle, #564763 1px, transparent 1.5px) 0 0 / 16px 16px,
+    #15121b;
+  scrollbar-color:#756281 #1e1827;
+}
+.ng-board {
+  position:relative;
+  margin-inline-start:auto;
+}
+.ng-wires {
+  position:absolute;
+  inset:0;
+  max-width:none;
+  pointer-events:none;
+}
+.ng-level {
+  position:absolute;
+  top:14px;
+  color:var(--ng-dim);
+  font-size:.68rem;
+  font-weight:700;
+  white-space:nowrap;
+}
+.nikki-graph .ng-tile {
+  --node-accent:#d0b9f2;
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  align-items:stretch;
+  justify-content:center;
+  padding:4px 8px;
+  color:var(--ng-ink);
+  text-align:left;
+  border:1px solid var(--ng-border);
+  border-left:3px solid var(--node-accent);
+  background:#231b2e;
+  border-radius:7px;
+  line-height:1.2;
+  box-shadow:0 4px 9px #110e1888;
+}
+.nikki-graph .ng-tile[data-kind=texture] {--node-accent:#87dcc8}
+.nikki-graph .ng-tile[data-kind=function] {--node-accent:#c8a0fb}
+.nikki-graph .ng-tile[data-kind=switch] {--node-accent:#f1c18c}
+.nikki-graph .ng-tile[data-kind=parameter] {--node-accent:#a3beff}
+.nikki-graph .ng-tile[data-kind=output] {--node-accent:#f8a9dc}
+.nikki-graph .ng-tile[data-kind=reroute] {--node-accent:#a19aac}
+.nikki-graph .ng-tile[data-kind=math] {--node-accent:#a9c0bd}
+.nikki-graph .ng-tile:hover,
+.nikki-graph .ng-tile[aria-pressed=true] {
+  color:var(--ng-ink);
+  background:#452e4e;
+  border-color:var(--node-accent);
+}
+.ng-tile-top {
+  display:flex;
+  justify-content:space-between;
+  gap:4px;
+  color:var(--node-accent);
+  font-size:.62rem;
+}
+.ng-tile strong,
+.ng-tile small {
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+.ng-tile strong {font-size:.81rem}
+.ng-tile small {font-size:.68rem;color:var(--ng-dim)}
+.ng-chart-caption {
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px 16px;
+  margin-block:7px 14px;
+  color:var(--ng-dim);
+  font-size:.74rem;
+}
+.ng-inspect {
+  padding:15px;
+  background:var(--ng-panel);
+  border:1px solid var(--ng-border);
+  border-radius:10px;
+}
+.ng-inspect-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+}
+.ng-inspect-head h4 {
+  margin:1px 0 2px;
+  color:var(--ng-ink);
+  font-size:1.11rem;
+}
+.ng-node-type {
+  color:var(--ng-highlight);
+  font-size:.75rem;
+}
+.nikki-graph .ng-branch-value {
+  margin-block:8px;
+  color:#f6d4a5;
+  font-size:.82rem;
+}
+.ng-pin-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(min(285px,100%), 1fr));
+  gap:9px;
+  margin-top:12px;
+}
+.ng-pin-grid section {
+  min-width:0;
+  padding:9px;
+  background:var(--ng-panel-deep);
+  border:1px solid var(--ng-border);
+  border-radius:8px;
+}
+.ng-pin-grid h5 {
+  margin:0;
+  color:var(--ng-ink);
+  font-size:.82rem;
+}
+.ng-pin-list {
+  display:grid;
+  gap:8px;
+  padding:0;
+  margin:7px 0 0;
+  list-style:none;
+}
+.ng-pin-list li {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:5px;
+  line-height:1.25;
+}
+.ng-pin-list li + li {
+  padding-top:7px;
+  border-top:1px solid var(--ng-border);
+}
+.ng-pin-list li small {color:#f2c58f;font-size:.71rem}
+.ng-pin-list .ng-inactive code {color:#ad9ab7}
+.nikki-graph code {
+  color:#e3ccfc;
+  font-size:.74rem;
+}
+.nikki-graph button:not(.ng-tile) {
+  min-height:30px;
+  max-width:100%;
+  padding:.24rem .55rem;
+  color:var(--ng-ink);
+  background:var(--ng-panel-deep);
+  border:1px solid var(--ng-border);
+  border-radius:7px;
+  font-size:.77rem;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.nikki-graph button:not(.ng-tile):hover {
+  border-color:var(--ng-highlight);
+}
+.nikki-graph .ng-props,
+.nikki-graph .ng-node-index {
+  margin:12px 0 0;
+  padding:8px 10px;
+  border:1px solid var(--ng-border);
+  border-radius:9px;
+  background:var(--ng-panel-deep);
+}
+.ng-props summary,.ng-node-index summary {font-size:.86rem;color:var(--ng-ink)}
+.ng-props dl {
+  display:grid;
+  grid-template-columns:minmax(88px, 1fr) minmax(0, 4fr);
+  gap:3px 9px;
+  margin:7px 0 3px;
+  font-size:.75rem;
+}
+.ng-props dt {color:var(--ng-dim)}
+.ng-props dd {
+  margin:0;
+  color:var(--ng-ink);
+  overflow-wrap:anywhere;
+}
+.ng-index-list {
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+.ng-asset {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:9px;
+  padding:8px;
+  background:var(--ng-panel-deep);
+  border:1px solid var(--ng-border);
+  border-radius:8px;
+}
+.ng-asset > div {
+  display:grid;
+  justify-items:start;
+  gap:3px;
+  min-width:0;
+}
+.ng-asset p {
+  color:var(--ng-ink);
+  font-weight:650;
+  overflow-wrap:anywhere;
+}
+.ng-asset small {
+  font-size:.7rem;
+  color:var(--ng-dim);
+}
+.ng-asset img {
+  flex:0 0 auto;
+  width:76px;
+  height:76px;
+  object-fit:contain;
+  background:#15121b;
+  border-radius:5px;
+  cursor:zoom-in;
+}
+.ng-function-link {margin-top:9px}
+.nikki-graph :focus-visible {
+  outline:2px solid var(--ng-highlight);
+  outline-offset:2px;
+}
+@media(max-width:580px) {
+  .nikki-graph {padding:10px}
+  .ng-inspect {padding:10px}
+  .ng-chart-scroll {max-height:440px}
+}
+
